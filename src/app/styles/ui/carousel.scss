@@ -1,0 +1,104 @@
+@import "../variables.scss";
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-box {
+  // height: 500px;
+  // width: 500px;
+}
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+
+  .carousel-item-description {
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    text-align: left;
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 15px;
+    // height: 100%;
+
+    h2 {
+      top: 0;
+    }
+
+    // p {
+    //   text-align: left;
+    //   justify-content: left;
+    // }
+    .carousel-btn-containter {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      // justify-content: space-between;
+      bottom: 16px;
+
+      .carousel-btn {
+        border: 1px solid black;
+        // font-size: 18px;
+        padding: 8px 16px;
+        cursor: pointer;
+        margin: 0.3px;
+      }
+      .carousel-btn-book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        font-size: 19.5px;
+        margin-right: 160px;
+        cursor: pointer;
+        padding: 0 15px;
+        color: $main-color;
+
+        .arrow-btn {
+          font-size: 25px;
+          align-items: center;
+          padding-top: 5px;
+          transition: transform 0.3s ease;
+          margin-right: 10px;
+        }
+      }
+      .carousel-btn-book:hover {
+        .arrow-btn {
+          transform: translateX(10px);
+        }
+      }
+
+      .btn-right:hover {
+        transition: transform 0.3s ease;
+        transform: translateX(-2px);
+      }
+      .btn-left:hover {
+        transition: transform 0.3s ease;
+        transform: translateX(2px);
+      }
+    }
+  }
+
+  .carousel-img {
+    width: 590px;
+    height: 440px;
+    // height: 5px;
+    padding: 15px;
+    object-position: center;
+    object-fit: cover;
+  }
+}

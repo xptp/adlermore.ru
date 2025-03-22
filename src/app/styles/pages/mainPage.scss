@@ -1,0 +1,344 @@
+@import "../variables.scss";
+.main-page {
+  display: block;
+  text-align: center;
+
+  margin: 0 auto;
+  max-width: $width-max;
+}
+
+.img-block {
+  max-width: $width-max;
+  height: 900px;
+  // background-image: url(https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Swimming-pools-in-Sharjah-D-18-03.jpg);
+  background-image: url(https://hotel-blacksea.com/img/galleryfull39.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-block-content {
+  margin: 0 auto;
+  max-width: $width-content;
+  // width: $width-content;
+  // height: 300px;
+  // background-color: black;
+}
+
+.img_text {
+  text-align: left;
+  padding-top: 44px;
+  font-size: 34px;
+  width: 470px;
+  color: rgb(245, 245, 245);
+}
+
+// блок О нас
+.info {
+  display: flex;
+  margin: 0 auto;
+  // max-width: $width-content ;
+  max-width: 1200px;
+  padding-top: 20px;
+
+  .info-img {
+    width: 460px;
+  }
+  .info-description {
+    text-align: left;
+    margin: 0 0 0 22px;
+    padding: 20px;
+    position: relative;
+
+    // border-bottom: 1px solid black;
+    h2 {
+      font-size: 36px;
+      margin-top: 27px;
+      // border-right: 1px solid black;
+    }
+  }
+
+  .info-description::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 1px;
+    height: 99.3%;
+    background-color: #000;
+  }
+  .info-description::before {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 105.5%;
+    height: 1px;
+    background-color: #000;
+    left: -39px;
+  }
+
+  .info-des-short {
+    font-size: 25px;
+
+    margin: 10px 0;
+  }
+  .info-des-long {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+// БЛОК УСЛУГ
+.services-block {
+  margin: 30px auto;
+  max-width: $width-content;
+
+  h2 {
+    font-size: 46px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .services-background-block {
+    background-image: url(https://hotel-blacksea.com/img/services_background.jpg);
+    height: 800px;
+    position: relative;
+    object-fit: cover;
+  }
+  .services-white-block {
+    // z-index: 1;
+    background-color: white;
+    position: absolute;
+    text-align: left;
+    width: 700px;
+    height: 400px;
+    right: -140px;
+    top: 200px;
+
+    -webkit-box-shadow: -11px 12px 8px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -11px 12px 8px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: -11px 12px 8px 1px rgba(34, 60, 80, 0.2);
+
+    h3 {
+      font-size: 28px;
+      padding: 20px;
+    }
+    p {
+      padding: 5px 35px;
+      font-size: 24px;
+    }
+    p::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      padding-left: 15px;
+    }
+    button {
+      font-size: 24px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      background: none;
+      margin: 30px 30px;
+    }
+    button:hover {
+    }
+  }
+}
+
+// БЛОК ПРЕИМУЩЕСТВА
+.advantages-block {
+  margin: 50px auto;
+  max-width: $width-content;
+  h2 {
+    font-size: 46px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .advantages-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .advantages-div {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+  }
+}
+
+// Блок Галлерея
+.gallery-block {
+  margin: 50px auto;
+  max-width: $width-max;
+
+  h2 {
+    font-size: 46px;
+    text-align: left;
+    margin-bottom: 20px;
+    max-width: $width-content;
+    margin: 0 auto;
+  }
+
+  .gallery-img-block {
+    display: flex;
+    width: 100%;
+
+    overflow: hidden;
+
+    flex-wrap: wrap;
+    gap: 10px;
+
+    img {
+      // width: calc(25% - 10px);
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  button {
+    font-size: 24px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: none;
+    margin: 30px 30px;
+  }
+}
+
+//Блок клиентов
+.client-block {
+  margin: 30px auto;
+  max-width: $width-max;
+  // object-position: center;
+  // object-fit: cover;
+  background-image: url(https://hotel-blacksea.com/img/sea_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 850px;
+
+  .client-white-block {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1400px;
+    text-align: left;
+  }
+}
+// Время Погода
+.weather-clock-block {
+  margin: 30px auto;
+  max-width: $width-content;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+//ОТзывы
+.reviews {
+  // background-color: aqua;
+  max-width: $width-content;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+// Карта
+.contacts-h2 {
+  font-size: 46px;
+  // padding-right: 260px;
+  text-align: left;
+  margin-bottom: 20px;
+  max-width: $width-content;
+  margin: 0 auto;
+}
+.map-contacts {
+  max-width: $width-content;
+  margin: 0 auto;
+  display: flex;
+  // background-color: bisque;
+  text-align: center;
+  justify-content: center;
+
+  .contacts {
+    text-align: left;
+
+    h3 {
+      margin-top: 20px;
+      font-size: 26px;
+    }
+    p {
+      font-size: 20px;
+      padding: 10px 15px 10px 0;
+    }
+    a {
+      font-size: 18px;
+    }
+
+    .route-btn {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+      font-size: 18px;
+      margin-right: 160px;
+      cursor: pointer;
+      padding: 0 15px;
+
+      .arrow-btn {
+        font-size: 25px;
+        align-items: center;
+        padding-top: 5px;
+        transition: transform 0.3s ease;
+        margin-right: 10px;
+      }
+    }
+    .route-btn:hover {
+      .arrow-btn {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  .map {
+    // max-width: $width-content;
+    // margin: 0 auto;
+    // text-align: center;
+    // justify-content: center;
+  }
+}
+
+//Footer
+.footer {
+  max-width: $width-max;
+  background-color: $main-color;
+  text-align: center;
+  justify-content: center;
+  height: 250px;
+
+  div {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-img {
+    width: 200px;
+    margin: 15px;
+  }
+
+  button {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    background: none;
+    border: none;
+    color: rgb(250, 250, 250);
+    font-size: 62px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transition: 0.4s ease;
+    transform: translateY(-5px);
+  }
+}
