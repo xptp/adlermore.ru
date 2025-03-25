@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/ui/navBar.scss";
-import logoImg from "../../img/logo.png";
+
 const NavBar = () => {
   return (
     <div className="header-nav">
@@ -16,7 +16,7 @@ const NavBar = () => {
       <div className="header_nav-ad-address">
         <div className="nav-address">
           <div className="div-logo">
-            <img className="logo" src={logoImg} alt="" />
+            <img className="logo" src="/img/logo.png" alt="" />
           </div>
           <div className="div-address">
             <h2>Adlermore</h2>
@@ -36,10 +36,37 @@ const NavBar = () => {
       </div>
       <nav className="nav-bar">
         <ul className="header_nav-list">
-          <li className="header_nav-item">Отель</li>
+          <li
+            className="header_nav-item"
+            onClick={() =>
+              document
+                .getElementById("info-section")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Отель
+          </li>
           <li className="header_nav-item">Услуги</li>
-          <li className="header_nav-item">Номера</li>
-          <li className="header_nav-item">ЕЩё кнопка</li>
+          <li
+            className="header_nav-item"
+            onClick={() =>
+              document
+                .getElementById("rooms-section")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Номера
+          </li>
+          <li
+            className="header_nav-item"
+            onClick={() =>
+              document
+                .getElementById("contacts-section")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Контакты
+          </li>
           <li className="header_nav-item">и ещё кнопка</li>
         </ul>
       </nav>

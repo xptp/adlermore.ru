@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../styles/ui/carousel.scss";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { HiArrowLongRight } from "react-icons/hi2";
+import SwiperComponent from "./swiperComponent";
 
 const Carousel = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -47,7 +48,11 @@ const Carousel = ({ items }) => {
                 </div>
               </div>
             </div>
-            <img className="carousel-img" src={item.image} alt={item.title} />
+            <SwiperComponent
+              objImages={item.img}
+              clName={"room-images-swiper"}
+            />
+            {/* <img className="carousel-img" src={item.image} alt={item.title} /> */}
           </div>
         ))}
       </div>

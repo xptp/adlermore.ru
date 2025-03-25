@@ -1,0 +1,28 @@
+.swiper {
+  position: relative;
+  width: 100%; /* Убедитесь, что контейнер занимает всю ширину */
+  height: 100%; /* Убедитесь, что высота контейнера занимает всю доступную высоту */
+  user-select: none;
+  display: block;
+  overflow: hidden; /* Добавлено для обрезки изображения */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.images-swiper {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Убедитесь, что изображение заполняет весь блок */
+  display: block;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: aliceblue;
+}

@@ -1,0 +1,56 @@
+@import "../variables.scss";
+
+.header-nav-scroll {
+  // transform: translateY(-50px);
+  position: fixed;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  // background-color: $main-color;
+  // color: white;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  width: $width-max;
+  z-index: 1;
+  animation: slideIn 0.3s ease-out;
+  // opacity: 0;
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .nav-bar-scroll {
+    // display: flex;
+    max-width: $width-content;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    .header_nav-list-scroll {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+
+      gap: 20px;
+
+      .header_nav-item-scroll {
+        padding: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        // border-right: 2px solid black;
+      }
+
+      // .header_nav-item:last-child {
+      //   border-right: none;
+      // }
+      // .header_nav-item::after {
+      //   border: 2px solid #2a2e49;
+      // }
+    }
+  }
+}

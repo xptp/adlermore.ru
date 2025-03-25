@@ -1,0 +1,138 @@
+@import "../variables.scss";
+.contacts-h2 {
+  font-size: 46px;
+  // padding-right: 260px;
+  text-align: left;
+  margin-bottom: 20px;
+  max-width: $width-content;
+  margin: 0 auto;
+}
+.map-contacts {
+  max-width: $width-content;
+  margin: 0 auto;
+  display: flex;
+  // background-color: bisque;
+  text-align: center;
+  justify-content: center;
+
+  .contacts {
+    text-align: left;
+
+    h3 {
+      margin-top: 20px;
+      font-size: 26px;
+    }
+    p {
+      font-size: 20px;
+      padding: 10px 15px 10px 0;
+    }
+    a {
+      font-size: 18px;
+    }
+
+    .route-btn {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+      font-size: 18px;
+      margin-right: 160px;
+      cursor: pointer;
+      padding: 0 15px;
+
+      .arrow-btn {
+        font-size: 25px;
+        align-items: center;
+        padding-top: 5px;
+        transition: transform 0.3s ease;
+        margin-right: 10px;
+      }
+    }
+    .route-btn:hover {
+      .arrow-btn {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  .map {
+    // max-width: $width-content;
+    // margin: 0 auto;
+    // text-align: center;
+    // justify-content: center;
+  }
+}
+
+//modal
+.modal-btn {
+  margin-top: 2px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  border: 1px solid black;
+  font-size: 16px;
+  // margin-right: 160px;
+  cursor: pointer;
+  padding: 9px 103px;
+  color: $main-color;
+  background: none;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  // margin-top: 10px;
+  // padding: 5px 10px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+// прокрутка
+.card {
+  opacity: 1;
+  transform: translateY(40px) scale(0.8);
+  animation: fadeIn 1.2s ease-in forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+    transform: translateY(40px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+//scroll

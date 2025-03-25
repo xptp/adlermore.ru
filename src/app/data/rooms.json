@@ -1,0 +1,43 @@
+[
+  {
+    "id": 0,
+    "title": "Двухместный стандарт",
+    "description": "Привлекательный классический стандартный номер предназначен для размещения до двух гостей и предлагает комфортное пространство с широкой кроватью и новыми ортопедическими матрасами. В номере имеется все необходимое для удовлетворения потребностей гостей, включая телевизор, холодильник, кондиционер, электрочайник и полный набор мебели. Гостям также доступен собственный санузел и балкон с видом либо на бассейн либо на оживленную улицу, создающий расслабляющую атмосферу для отдыха и наслаждения прекрасным видом.",
+    "size": 20,
+    "img": [
+      { "id": 0, "image": "/img/doubleStandard/2.webp" },
+      { "id": 2, "image": "/img/doubleStandard/3.webp" },
+      { "id": 3, "image": "/img/doubleStandard/4.webp" },
+      { "id": 4, "image": "/img/doubleStandard/5.webp" },
+      { "id": 5, "image": "/img/doubleStandard/6.webp" },
+      { "id": 6, "image": "/img/doubleStandard/7.webp" },
+      { "id": 7, "image": "/img/doubleStandard/8.webp" },
+      { "id": 8, "image": "/img/doubleStandard/9.jpg" },
+      { "id": 9, "image": "/img/doubleStandard/10.jpg" },
+      { "id": 10, "image": "/img/doubleStandard/11.jpg" },
+      { "id": 11, "image": "/img/doubleStandard/12.jpg" },
+      { "id": 12, "image": "/img/doubleStandard/13.jpg" },
+      { "id": 13, "image": "/img/doubleStandard/14.jpg" },
+      { "id": 1, "image": "/img/doubleStandard/1.jpg" },
+      { "id": 14, "image": "/img/doubleStandard/15.jpg" },
+      { "id": 15, "image": "/img/doubleStandard/16.jpg" },
+      { "id": 16, "image": "/img/doubleStandard/17.jpg" },
+      { "id": 17, "image": "/img/doubleStandard/18.jpg" },
+      { "id": 18, "image": "/img/doubleStandard/19.jpg" },
+      { "id": 19, "image": "/img/doubleStandard/20.jpg" },
+      { "id": 20, "image": "/img/doubleStandard/21.jpg" },
+      { "id": 21, "image": "/img/doubleStandard/22.jpg" },
+      { "id": 22, "image": "/img/doubleStandard/23.jpg" }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Двухместный стандарт",
+    "description": "Привлекательный классический стандартный номер предназначен для размещения до двух гостей и предлагает комфортное пространство с широкой кроватью и новыми ортопедическими матрасами. В номере имеется все необходимое для удовлетворения потребностей гостей, включая телевизор, холодильник, кондиционер, электрочайник и полный набор мебели. Гостям также доступен собственный санузел и балкон с видом либо на бассейн либо на оживленную улицу, создающий расслабляющую атмосферу для отдыха и наслаждения прекрасным видом.",
+    "size": 20,
+    "img": [
+      { "id": 0, "image": "/img/doubleStandard/1.jpg" },
+      { "id": 1, "image": "/img/doubleStandard/2.webp" }
+    ]
+  }
+]

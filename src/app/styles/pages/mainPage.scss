@@ -100,7 +100,11 @@
   }
 
   .services-background-block {
-    background-image: url(https://hotel-blacksea.com/img/services_background.jpg);
+    // background-image: url(https://hotel-blacksea.com/img/services_background.jpg);
+    background-image: url(https://avatars.mds.yandex.net/get-altay/6057477/2a00000180c7ec8be59e4d690b814261db60/XXXL);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 800px;
     position: relative;
     object-fit: cover;
@@ -241,70 +245,6 @@
   justify-content: center;
 }
 // Карта
-.contacts-h2 {
-  font-size: 46px;
-  // padding-right: 260px;
-  text-align: left;
-  margin-bottom: 20px;
-  max-width: $width-content;
-  margin: 0 auto;
-}
-.map-contacts {
-  max-width: $width-content;
-  margin: 0 auto;
-  display: flex;
-  // background-color: bisque;
-  text-align: center;
-  justify-content: center;
-
-  .contacts {
-    text-align: left;
-
-    h3 {
-      margin-top: 20px;
-      font-size: 26px;
-    }
-    p {
-      font-size: 20px;
-      padding: 10px 15px 10px 0;
-    }
-    a {
-      font-size: 18px;
-    }
-
-    .route-btn {
-      margin-top: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid black;
-      font-size: 18px;
-      margin-right: 160px;
-      cursor: pointer;
-      padding: 0 15px;
-
-      .arrow-btn {
-        font-size: 25px;
-        align-items: center;
-        padding-top: 5px;
-        transition: transform 0.3s ease;
-        margin-right: 10px;
-      }
-    }
-    .route-btn:hover {
-      .arrow-btn {
-        transform: translateX(10px);
-      }
-    }
-  }
-
-  .map {
-    // max-width: $width-content;
-    // margin: 0 auto;
-    // text-align: center;
-    // justify-content: center;
-  }
-}
 
 //Footer
 .footer {
