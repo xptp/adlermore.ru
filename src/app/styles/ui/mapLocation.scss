@@ -7,13 +7,17 @@
   max-width: $width-content;
   margin: 0 auto;
 }
+
 .map-contacts {
-  max-width: $width-content;
+  max-width: $width-max;
   margin: 0 auto;
+  // background-color: $main-color;
   display: flex;
   // background-color: bisque;
   text-align: center;
   justify-content: center;
+  // color: white;
+  padding: 25px;
 
   .contacts {
     text-align: left;
@@ -31,7 +35,7 @@
     }
 
     .route-btn {
-      margin-top: 50px;
+      margin-top: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -55,66 +59,19 @@
       }
     }
   }
+}
 
-  .map {
-    // max-width: $width-content;
-    // margin: 0 auto;
-    // text-align: center;
-    // justify-content: center;
-  }
+.weather-clock-block {
+  // margin: 30px auto;
+  // max-width: $width-content;
+  justify-content: left;
+  align-items: left;
+  display: block;
+  // flex-direction: column;
 }
 
 //modal
-.modal-btn {
-  margin-top: 2px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  border: 1px solid black;
-  font-size: 16px;
-  // margin-right: 160px;
-  cursor: pointer;
-  padding: 9px 103px;
-  color: $main-color;
-  background: none;
-}
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
 
-.modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
-}
-
-.modal-content img {
-  max-width: 100%;
-  max-height: 80vh;
-  border-radius: 5px;
-}
-
-.modal-content button {
-  // margin-top: 10px;
-  // padding: 5px 10px;
-  position: absolute;
-  right: 20px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-size: 20px;
-}
 // прокрутка
 .card {
   opacity: 1;

@@ -5,31 +5,59 @@
 
   margin: 0 auto;
   max-width: $width-max;
+  color: $main-color;
 }
 
 .img-block {
   max-width: $width-max;
   height: 900px;
-  // background-image: url(https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Swimming-pools-in-Sharjah-D-18-03.jpg);
   background-image: url(https://hotel-blacksea.com/img/galleryfull39.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.img-block-content {
-  margin: 0 auto;
-  max-width: $width-content;
-  // width: $width-content;
-  // height: 300px;
-  // background-color: black;
-}
+  position: relative;
+  transition: all 0.3s ease;
 
-.img_text {
-  text-align: left;
-  padding-top: 44px;
-  font-size: 34px;
-  width: 470px;
-  color: rgb(245, 245, 245);
+  .img-block-content {
+    margin: 0 auto;
+    max-width: $width-content;
+    // width: $width-content;
+    // height: 300px;
+    // background-color: black;
+  }
+
+  .img_text {
+    text-align: left;
+    padding-top: 70px;
+    font-size: 40px;
+    width: 560px;
+    margin-bottom: 200px;
+    color: rgb(245, 245, 245);
+  }
+  .wiget-img {
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); // Начальный прозрачный фон
+    transition: background 0.3s ease;
+    z-index: 0;
+  }
+
+  &:hover::before {
+    background: rgba(0, 0, 0, 0.1); // 10% затемнение фона
+  }
+
+  // Контент должен быть выше псевдоэлемента
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 // блок О нас
@@ -171,42 +199,11 @@
   }
 }
 
-// Блок Галлерея
-.gallery-block {
-  margin: 50px auto;
+// Информация
+.info-hotel {
+  margin: 30px auto;
   max-width: $width-max;
-
-  h2 {
-    font-size: 46px;
-    text-align: left;
-    margin-bottom: 20px;
-    max-width: $width-content;
-    margin: 0 auto;
-  }
-
-  .gallery-img-block {
-    display: flex;
-    width: 100%;
-
-    overflow: hidden;
-
-    flex-wrap: wrap;
-    gap: 10px;
-
-    img {
-      // width: calc(25% - 10px);
-      object-position: center;
-      object-fit: cover;
-    }
-  }
-  button {
-    font-size: 24px;
-    padding: 8px 14px;
-    border-radius: 10px;
-    cursor: pointer;
-    background: none;
-    margin: 30px 30px;
-  }
+  background-color: $main-color;
 }
 
 //Блок клиентов
@@ -227,25 +224,19 @@
     text-align: left;
   }
 }
-// Время Погода
-.weather-clock-block {
-  margin: 30px auto;
-  max-width: $width-content;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 
 //ОТзывы
-.reviews {
-  // background-color: aqua;
-  max-width: $width-content;
-  margin: 0 auto;
-  text-align: center;
-  justify-content: center;
-}
+// .reviews {
+//   // background-color: aqua;
+//   max-width: $width-content;
+//   margin: 50px auto;
+//   text-align: center;
+//   justify-content: center;
+// }
 // Карта
+// .map-contacts {
 
+// }
 //Footer
 .footer {
   max-width: $width-max;

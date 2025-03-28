@@ -5,7 +5,7 @@ const UsefulInfo = () => {
   return (
     <div className="bs-usefull__info">
       <div className="bs-usefull__info-time-widget">
-        <p className="bs-usefull__info-time">Время в Адлере</p>
+        <p className="bs-usefull__info-time">Время и погода в Адлере</p>
         <iframe
           title="Time in Adler"
           className="irframe"

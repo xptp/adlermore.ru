@@ -8,15 +8,24 @@ const NavBarScroll = () => {
         <ul className="header_nav-list-scroll">
           <li
             className="header_nav-item-scroll"
+            // onClick={() =>
+            //   document
+            //     .getElementById("info-section")
+            //     .scrollIntoView({ behavior: "smooth" })
+            // }
+          >
+            Отель
+          </li>
+          <li
+            className="header_nav-item-scroll"
             onClick={() =>
               document
                 .getElementById("info-section")
                 .scrollIntoView({ behavior: "smooth" })
             }
           >
-            Отель
+            Информация
           </li>
-          <li className="header_nav-item-scroll">Услуги</li>
           <li
             className="header_nav-item-scroll"
             onClick={() =>

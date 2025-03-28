@@ -1,0 +1,20 @@
+.widget-container {
+  max-width: 1300px; /* Фиксированная ширина */
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Жёлтая кнопка → #2a2e49 */
+#booking-widget-container .btn-primary {
+  background-color: #2a2e49 !important;
+  border-color: #2a2e49 !important;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .widget-container {
+    padding: 10px;
+  }
+}

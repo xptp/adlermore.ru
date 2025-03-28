@@ -2,42 +2,18 @@ import React, { useEffect, useRef, useState } from "react";
 import NavBar from "../../ui/navBar";
 import "../../../styles/pages/mainPage.scss";
 import Carousel from "../../ui/Carousel";
-import WeatherWidget from "../../ui/weather";
-import UsefulInfo from "../../ui/clock";
 import { MdOutlineArrowCircleUp } from "react-icons/md";
 import BookingImg from "../../ui/bookingImg";
-import MapContacts from "../../ui/mapContacts";
+import MapLocation from "../../ui/mapLocation";
 import rooms from "../../../data/rooms.json";
 import NavBarScroll from "../../ui/navBarScroll";
+import InfoHotel from "../../ui/infoHotel";
+import Gallery from "../../ui/gallery";
 
 const MainPage = () => {
   const [showStickyNav, setShowStickyNav] = useState(false);
   const triggerBlockRef = useRef();
-  // const items = [
-  //   {
-  //     image:
-  //       "https://downloader.disk.yandex.ru/preview/9fe94223f6fdfb4b03daaf7f71c1045ad48a31334e0e4631a3b5536b56e66992/67db1222/yi6pjBnGVbr8nDHI5jP8j_eFua_Ba4hRGnwmwnGkUHawYT6tsLiwu5Tr1aAPPFOXGfF1lvfwHmeZJSJGk9s1oA%3D%3D?uid=0&filename=1-изображения-14.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2543x1299",
-  //     title: "Двухместный стандарт",
-  //     description:
-  //       "Привлекательный классический стандартный номер предназначен для размещения до двух гостей и предлагает комфортное пространство с широкой кроватью и новыми ортопедическими матрасами. В номере имеется все необходимое для удовлетворения потребностей гостей, включая телевизор, холодильник, кондиционер, электрочайник и полный набор мебели. Гостям также доступен собственный санузел и балкон с видом либо на бассейн либо на оживленную улицу, создающий расслабляющую атмосферу для отдыха и наслаждения прекрасным видом.",
-  //     size: 20,
-  //   },
-  //   {
-  //     image:
-  //       "https://downloader.disk.yandex.ru/preview/c36f475f9d7dd92cb22759bab1ea5ba33017796036098e5d85956ae3b2a36757/67db1223/lW7SfppC0arr3gIR-pnvpI4wtL4O-nJlhj0f-rP1SQqoAiOpnOkvgczys-YFEjCEBPeovs8tlbCnzyIVpMD5-A%3D%3D?uid=0&filename=4933120.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2543x1299",
-  //     title: "Комфорт с балконом",
-  //     description:
-  //       "Просторный номер с элегантным дизайном, удобной кроватью, мини-баром, телевизором и стильной ванной комнатой.",
-  //   },
-  //   {
-  //     image:
-  //       "https://downloader.disk.yandex.ru/preview/5e80b4433bcd4145b1291b716aa3dd863d978f2c53287b82c814665eebb1fddd/67db1224/ZI_Cuaq5bG1wSgelMNdu1vd_CObjP5HvkuAmBZiXCZS92wELkfibdZZqPomlPKzJIG5YTCtrFhnb_EuqJ4hOaA%3D%3D?uid=0&filename=4933146.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2560x1316",
-  //     title: "Двухкомнатный люкс",
-  //     description:
-  //       "Luxury suite with a jacuzzi and a panoramic view of the mountains.",
-  //   },
-  // ];
-  console.log(rooms);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -58,7 +34,7 @@ const MainPage = () => {
       <NavBar />
       <BookingImg />
       <div ref={triggerBlockRef} style={{ height: "1px" }} />
-      <div className="info" id="info-section">
+      <div className="info">
         <img
           className="info-img"
           src="https://hotel-blacksea.com/img/three_photos_new.webp"
@@ -146,27 +122,17 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      <div className="gallery-block">
-        <h2>Галлерея</h2>
-        <div className="gallery-img-block">
-          <img src="https://hotel-blacksea.com/img/galleryfull38.jpg" alt="" />
-          <img src="https://hotel-blacksea.com/img/galleryfull22.jpg" alt="" />
-          <img src="https://hotel-blacksea.com/img/galleryfull39.jpg" alt="" />
-          <img src="https://hotel-blacksea.com/img/galleryfull15.jpg" alt="" />
-        </div>
-        <button>Больше фото</button>
+
+      <Gallery />
+
+      <h2 className="contacts-h2">Информация</h2>
+      <div className="info-hotel" id="info-section">
+        <InfoHotel />
       </div>
+      <h2 className="contacts-h2">Как нас найти</h2>
 
-      <div className="weather-clock-block">
-        <WeatherWidget />
-
-        <UsefulInfo />
-        <iframe
-          src="https://yandex.ru/sprav/widget/rating-badge/1126085566?type=alt"
-          width="150"
-          height="50"
-          frameborder="0"
-        ></iframe>
+      <div className="map-contacts" id="contacts-section">
+        <MapLocation />
       </div>
       <div className="reviews">
         <div
@@ -186,7 +152,7 @@ const MainPage = () => {
               borderRadius: "8px",
               boxSizing: "border-box",
             }}
-            src="https://yandex.ru/maps-reviews-widget/1126085566?comments"
+            src="https://yandex.ru/maps-reviews-widget/1126085566?comments&sort=rating_desc"
             title="Yandex Map Widget"
           ></iframe>
           <a
@@ -217,11 +183,6 @@ const MainPage = () => {
             Море на карте Сочи — Яндекс Карты
           </a>
         </div>
-      </div>
-
-      <h2 className="contacts-h2">Контактная информация</h2>
-      <div className="map-contacts" id="contacts-section">
-        <MapContacts />
       </div>
 
       <div className="footer">

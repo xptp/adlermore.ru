@@ -38,15 +38,24 @@ const NavBar = () => {
         <ul className="header_nav-list">
           <li
             className="header_nav-item"
+            // onClick={() =>
+            //   document
+            //     .getElementById("info-section")
+            //     .scrollIntoView({ behavior: "smooth" })
+            // }
+          >
+            Отель
+          </li>
+          <li
+            className="header_nav-item"
             onClick={() =>
               document
                 .getElementById("info-section")
                 .scrollIntoView({ behavior: "smooth" })
             }
           >
-            Отель
+            Информация
           </li>
-          <li className="header_nav-item">Услуги</li>
           <li
             className="header_nav-item"
             onClick={() =>
