@@ -9,7 +9,10 @@ const MapLocation = () => {
     <>
       <div className="contacts">
         <h3>Адрес</h3>
-        <p>354340, г. Сочи, Адлерский район, ул. Бестужева, 6а</p>
+        <p>
+          Краснодарский край, Сочи, жилой район Адлер, переулок
+          <br /> Чкалова, 9А
+        </p>
 
         <a
           href="https://yandex.ru/maps/239/sochi/?from=mapframe&ll=39.895485%2C43.476799&mode=routes&rtext=~43.476131%2C39.895524&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D1126085566&source=mapframe&utm_source=mapframe&z=18"
@@ -56,7 +59,7 @@ const MapLocation = () => {
             src="https://yandex.ru/map-widget/v1/?ll=39.894695%2C43.475238&mode=poi&poi%5Bpoint%5D=39.895523%2C43.476131&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1126085566&utm_campaign=v1&utm_medium=rating&utm_source=badge&z=18.2"
             // src="https://yandex.ru/map-widget/v1/?ll=39.894695%2C43.475238&z=18.2"
             width="600"
-            height="550"
+            height="585"
             frameBorder="1"
             allowFullScreen
             style={{ position: "relative" }}

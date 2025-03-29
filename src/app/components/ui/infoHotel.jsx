@@ -18,9 +18,9 @@ const InfoHotel = () => {
     <div className="info-container">
       <div className="info-desc-container info-box">
         <h3>Отдел Бронирования</h3>
-        <a href="tel:">+7 (862) 555 25 44</a>
+        <a href="tel:+79189579280">+7 (918) 957-92-80</a>
         <br />
-        <a href="tel:">+7 (918) 915 92 26 (What’s App)</a>
+        {/* <a href="tel:">+7 (918) 915 92 26 (What’s App)</a> */}
         <h3>E-mail</h3>
         <a href="mailto:">test@mail.ru</a>
         <div className="mini-reviews">
