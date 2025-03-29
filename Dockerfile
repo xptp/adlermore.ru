@@ -1,28 +1,28 @@
-FROM node:18-alpine as client
-
-WORKDIR /app/client
-
-COPY client/package.json /app/client
-
-RUN npm install
-
-COPY client /app/client
-
-RUN npm run build
-
-FROM node:16-alpine
+FROM node:18-alpine as build
 
 WORKDIR /app
 
-COPY server/package.json /app
+
+COPY package*.json ./
+
 
 RUN npm install
 
-COPY server /app
 
-COPY --from=client /app/client/build /app/client
+COPY . .
 
-EXPOSE 8080
 
-# CMD ["npm", "start"]
-CMD ["sh", "-c", "NODE_ENV=production node app.js"]
+RUN npm run build
+
+FROM nginx:stable-alpine
+
+
+COPY --from=build /app/build /usr/share/nginx/html
+
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+
+
+CMD ["nginx", "-g", "daemon off;"]
