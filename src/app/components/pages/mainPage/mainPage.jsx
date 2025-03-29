@@ -78,7 +78,7 @@ const MainPage = () => {
       </div>
 
       <div className="services-block">
-        <h2>Услуги</h2>
+        <h2></h2>
         <div className="services-background-block">
           <div className="services-white-block">
             <h3>В номерах:</h3>
@@ -94,7 +94,7 @@ const MainPage = () => {
         </div>
       </div>
 
-      <div className="advantages-block">
+      {/* <div className="advantages-block">
         <h2>Наши преимущества</h2>
         <div className="advantages-box">
           <div className="advantages-div">
@@ -131,7 +131,7 @@ const MainPage = () => {
             <p>Охраняемая парковка на месте</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Gallery />
 

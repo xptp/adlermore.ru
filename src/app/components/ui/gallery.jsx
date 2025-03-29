@@ -5,10 +5,14 @@ const Gallery = () => {
     <div className="gallery-container" id="gallery-section">
       <h2 className="h2-gallery ">Галлерея</h2>
       <div className="gallery-img-block">
-        <img src="https://hotel-blacksea.com/img/galleryfull38.jpg" alt="" />
-        <img src="https://hotel-blacksea.com/img/galleryfull22.jpg" alt="" />
+        <img src="/img/gallery/1.png" alt="" />
+        <img src="/img/gallery/3.webp" alt="" />
+        <img src="/img/gallery/5.webp" alt="" />
+        <img src="/img/gallery/6.webp" alt="" />
+        <img src="/img/gallery/21.jpg" alt="" />
+        {/* <img src="https://hotel-blacksea.com/img/galleryfull22.jpg" alt="" />
         <img src="https://hotel-blacksea.com/img/galleryfull39.jpg" alt="" />
-        <img src="https://hotel-blacksea.com/img/galleryfull15.jpg" alt="" />
+        <img src="https://hotel-blacksea.com/img/galleryfull15.jpg" alt="" /> */}
       </div>
     </div>
   );

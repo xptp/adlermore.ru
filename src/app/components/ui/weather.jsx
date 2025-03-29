@@ -3,33 +3,36 @@ import React, { useEffect } from "react";
 const WeatherWidget = () => {
   // Добавляем скрипт динамически
   useEffect(() => {
+    // Динамически добавляем скрипт
     const script = document.createElement("script");
     script.src =
-      "https://world-weather.ru/wwinformer.php?userid=e56c837deaa3dd43b01f86536a7df1d6";
+      "https://world-weather.ru/wwinformer.php?userid=d2b9ba3c7b32eff1e8db264853bf8dd9";
     script.async = true;
     script.charset = "utf-8";
     document.body.appendChild(script);
 
-    // Очистка при размонтировании компонента
     return () => {
+      // Удаляем скрипт при размонтировании компонента
       document.body.removeChild(script);
     };
   }, []);
-
   return (
-    <div
-      id="e56c837deaa3dd43b01f86536a7df1d6"
-      className="ww-informers-box-854753"
-    >
-      <p className="ww-informers-box-854754">
-        <a href="https://world-weather.ru/pogoda/russia/adler/month/">
-          {/* Подробнее о погоде в Москве на 30 дней */}
-        </a>
-        <br />
-        <a href="https://world-weather.ru/pogoda/russia/chelyabinsk/">
-          {/* https://world-weather.ru/pogoda/russia/chelyabinsk/ */}
-        </a>
-      </p>
+    <>
+      <div
+        id="d2b9ba3c7b32eff1e8db264853bf8dd9"
+        className="ww-informers-box-854753"
+      >
+        <p className="ww-informers-box-854754">
+          <a href="https://world-weather.ru/pogoda/russia/adler/7days/">
+            Подробнее о прогнозе на world-weather.ru
+          </a>
+          <br />
+          <a href="https://world-weather.ru/pogoda/russia/bryansk/">
+            Прогноз погоды в Брянске на завтра
+          </a>
+        </p>
+      </div>
+
       <style jsx>{`
         .ww-informers-box-854754 {
           -webkit-animation-name: ww-informers54;
@@ -45,7 +48,6 @@ const WeatherWidget = () => {
           line-height: 18px;
           text-align: center;
         }
-
         @-webkit-keyframes ww-informers54 {
           0%,
           80% {
@@ -55,7 +57,6 @@ const WeatherWidget = () => {
             opacity: 1;
           }
         }
-
         @keyframes ww-informers54 {
           0%,
           80% {
@@ -66,7 +67,7 @@ const WeatherWidget = () => {
           }
         }
       `}</style>
-    </div>
+    </>
   );
 };
 
