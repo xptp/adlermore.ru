@@ -33,6 +33,17 @@ const MainPage = () => {
       <NavBar />
       <BookingImg />
       <div ref={triggerBlockRef} style={{ height: "1px" }} />
+      {showStickyNav ? (
+        <button
+          className="up-btn"
+          onClick={() =>
+            document.getElementById("up").scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          <MdOutlineArrowCircleUp />
+        </button>
+      ) : null}
+
       <div className="info">
         {/* <img
           className="info-img"
@@ -186,15 +197,6 @@ const MainPage = () => {
       <div className="footer">
         <div>
           <img className="footer-img" src="/img/logo.png" alt="" />
-          <button
-            onClick={() =>
-              document
-                .getElementById("up")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            <MdOutlineArrowCircleUp />
-          </button>
         </div>
       </div>
     </div>
