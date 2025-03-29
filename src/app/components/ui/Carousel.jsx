@@ -47,48 +47,53 @@ const Carousel = ({ items }) => {
       >
         {items.map((item, index) => (
           <div key={index} className="carousel-item">
-            <div className="carousel-item-description">
-              <h2 className="h2-carousel">{item.title}</h2>
-              <p className="sd-carousel">{item.shortDescription}</p>
-              <p className="size-carousel">
-                <TbResize /> {item.size} кв.м
-              </p>
-              <button
-                onClick={() => openModal(item)}
-                className="more-btn-carousel"
-              >
-                Подробнее
-              </button>
-              <div className="carousel-btn-containter">
+            <div className="back-gr">
+              <div className="carousel-item-description">
+                <h2 className="h2-carousel">{item.title}</h2>
+                <p className="sd-carousel">{item.shortDescription}</p>
+                <p className="size-carousel">
+                  <TbResize /> {item.size} кв.м
+                </p>
                 <button
-                  className="carousel-btn-book"
-                  // onClick={() => openModal(item)}
+                  onClick={() => openModal(item)}
+                  className="more-btn-carousel"
                 >
-                  <div className="arrow-btn">
-                    <HiArrowLongRight />
-                  </div>
-                  Забронировать
+                  Подробнее
                 </button>
+                <div className="carousel-btn-containter">
+                  <button className="carousel-btn-book">
+                    <div className="arrow-btn">
+                      <HiArrowLongRight />
+                    </div>
+                    Забронировать
+                  </button>
 
-                <div>
-                  <button className="carousel-btn btn-right" onClick={goToPrev}>
-                    <SlArrowLeft />
-                  </button>
-                  <button className="carousel-btn btn-left" onClick={goToNext}>
-                    <SlArrowRight />
-                  </button>
+                  <div className="carousel-btn-group">
+                    <button
+                      className="carousel-btn btn-right"
+                      onClick={goToPrev}
+                    >
+                      <SlArrowLeft />
+                    </button>
+                    <button
+                      className="carousel-btn btn-left"
+                      onClick={goToNext}
+                    >
+                      <SlArrowRight />
+                    </button>
+                  </div>
                 </div>
               </div>
+              <SwiperComponent
+                objImages={item.img}
+                clName={"room-images-swiper"}
+              />
             </div>
-            <SwiperComponent
-              objImages={item.img}
-              clName={"room-images-swiper"}
-            />
           </div>
         ))}
       </div>
 
-      {/* Модальное окно остается внутри карусели, но стилизуется на весь экран */}
+      {/* Модальное окно  */}
       {isModalOpen && (
         <div className="modal-overlay-carousel">
           <div className="modal-content-carousel">
@@ -96,34 +101,36 @@ const Carousel = ({ items }) => {
               <IoMdClose />
             </button>
 
-            <div className="modal-div-container-carousel">
-              <div>
+            <div className="modal-main-content">
+              <div className="modal-image-section">
                 <SwiperComponent
                   objImages={currentModalItem.img}
                   clName={"modal-room-images-swiper"}
                 />
               </div>
 
-              <div className="modal-text-content-carousel">
-                <h2 className="h2-name-modal">{currentModalItem.title}</h2>
-                <div className="p-text-modal">
-                  <h4>Оснащение номера:</h4>
-
-                  {currentModalItem.other.map((o) => (
-                    <>
-                      <p className="p-other-modal" key={o.id}>
-                        {o.data}
-                      </p>
-                    </>
-                  ))}
-
-                  {/* {currentModalItem.description} */}
+              <div className="modal-text-section">
+                <h2 className="modal-title">{currentModalItem.title}</h2>
+                <div className="modal-description">
+                  <p>{currentModalItem.description}</p>
+                  <p className="room-size">{currentModalItem.size} кв.м</p>
                 </div>
               </div>
             </div>
-            <div className="description-modal">
-              <p>{currentModalItem.description}</p>
-              <p className="p-size-modal">{currentModalItem.size} кв.м</p>
+
+            <div className="modal-features-container">
+              {currentModalItem.other.map((category) => (
+                <div key={category.id} className="feature-category">
+                  <h4 className="category-title">{category.name}</h4>
+                  <div className="feature-items">
+                    {category.info.map((item) => (
+                      <p key={item.id} className="feature-item">
+                        {item.data || item.name}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

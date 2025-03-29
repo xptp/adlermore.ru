@@ -3,19 +3,10 @@ import "../../styles/ui/navBarScroll.scss";
 
 const NavBarScroll = () => {
   return (
-    <div className="header-nav-scroll">
+    <div className="header-nav-scroll visible">
       <nav className="nav-bar-scroll">
         <ul className="header_nav-list-scroll">
-          <li
-            className="header_nav-item-scroll"
-            // onClick={() =>
-            //   document
-            //     .getElementById("info-section")
-            //     .scrollIntoView({ behavior: "smooth" })
-            // }
-          >
-            Отель
-          </li>
+          <li className="header_nav-item-scroll">Отель</li>
           <li
             className="header_nav-item-scroll"
             onClick={() =>

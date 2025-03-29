@@ -56,7 +56,7 @@ const MapLocation = () => {
             src="https://yandex.ru/map-widget/v1/?ll=39.894695%2C43.475238&mode=poi&poi%5Bpoint%5D=39.895523%2C43.476131&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1126085566&utm_campaign=v1&utm_medium=rating&utm_source=badge&z=18.2"
             // src="https://yandex.ru/map-widget/v1/?ll=39.894695%2C43.475238&z=18.2"
             width="600"
-            height="500"
+            height="550"
             frameBorder="1"
             allowFullScreen
             style={{ position: "relative" }}

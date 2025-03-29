@@ -1,37 +1,65 @@
 @import "../variables.scss";
+
 .contacts-h2 {
   font-size: 46px;
-  // padding-right: 260px;
   text-align: left;
   margin-bottom: 20px;
   max-width: $width-content;
   margin: 0 auto;
+  color: $main-text;
 }
 
 .map-contacts {
   max-width: $width-max;
   margin: 0 auto;
-  // background-color: $main-color;
   display: flex;
-  // background-color: bisque;
   text-align: center;
   justify-content: center;
-  // color: white;
   padding: 25px;
+  margin-bottom: 100px;
 
   .contacts {
     text-align: left;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-right: 30px;
+    border-top: 3px solid $main-color;
 
     h3 {
       margin-top: 20px;
       font-size: 26px;
+      color: $main-color;
+      position: relative;
+      padding-bottom: 10px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: $a-color;
+      }
     }
+
     p {
       font-size: 20px;
       padding: 10px 15px 10px 0;
+      color: $main-text;
+      line-height: 1.5;
     }
+
     a {
       font-size: 18px;
+      color: $main-text;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $a-color;
+      }
     }
 
     .route-btn {
@@ -39,11 +67,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid black;
+      border: 2px solid $main-color;
       font-size: 18px;
       margin-right: 160px;
       cursor: pointer;
-      padding: 0 15px;
+      padding: 8px 20px;
+      border-radius: 30px;
+      color: $main-color;
+      background: white;
+      transition: all 0.3s ease;
 
       .arrow-btn {
         font-size: 25px;
@@ -51,28 +83,29 @@
         padding-top: 5px;
         transition: transform 0.3s ease;
         margin-right: 10px;
+        color: $main-color;
       }
-    }
-    .route-btn:hover {
-      .arrow-btn {
-        transform: translateX(10px);
+
+      &:hover {
+        background: $main-color;
+        color: white;
+
+        .arrow-btn {
+          transform: translateX(10px);
+          color: white;
+        }
       }
     }
   }
 }
 
 .weather-clock-block {
-  // margin: 30px auto;
-  // max-width: $width-content;
   justify-content: left;
   align-items: left;
   display: block;
-  // flex-direction: column;
+  margin-top: 20px;
 }
 
-//modal
-
-// прокрутка
 .card {
   opacity: 1;
   transform: translateY(40px) scale(0.8);
@@ -91,5 +124,3 @@
     transform: translateY(0) scale(1);
   }
 }
-
-//scroll

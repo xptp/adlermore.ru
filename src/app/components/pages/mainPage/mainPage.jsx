@@ -17,7 +17,6 @@ const MainPage = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Если верх триггер-блока выше верха окна — показываем навбар
         setShowStickyNav(entry.boundingClientRect.top < 0);
       },
       { threshold: 0 }
@@ -35,11 +34,11 @@ const MainPage = () => {
       <BookingImg />
       <div ref={triggerBlockRef} style={{ height: "1px" }} />
       <div className="info">
-        <img
+        {/* <img
           className="info-img"
           src="https://hotel-blacksea.com/img/three_photos_new.webp"
           alt=""
-        />
+        /> */}
         <div className="info-description">
           <h2>О НАС</h2>
           <div className="info-des-short">
@@ -79,7 +78,6 @@ const MainPage = () => {
               Собственная ванная комната с комплектом <br /> душевых
               принадлежностей
             </p>
-            <button>Забронировать</button>
           </div>
         </div>
       </div>

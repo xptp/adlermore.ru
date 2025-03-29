@@ -1,136 +1,207 @@
 @import "../variables.scss";
 .header-nav {
-  display: block;
-  justify-content: center;
-  text-align: center;
   max-width: $width-max;
+  margin: 0 auto;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  position: relative;
+  z-index: 100;
 
   .header {
-    // display: flex;
-    max-width: $width-max;
     background-color: $main-color;
-
     color: white;
-    // height: 100px;
-
-    // padding: 10px;
 
     .header-content {
       display: flex;
       margin: 0 auto;
-      height: 80px;
-      font-size: 20px;
+      height: 50px;
+      font-size: 16px;
       justify-content: space-between;
       align-items: center;
-      // background-color: aqua;
       width: $width-content;
+      padding: 0 20px;
 
       .message-btn {
-        font-size: 20px;
-        padding: 10px 12px;
-        border-radius: 15px;
-        border: 0.3px solid white;
-        transition: color 0.4s ease;
-        cursor: pointer;
-      }
-      .message-btn:hover {
-        background-color: $main-color;
+        font-size: 16px;
+        padding: 8px 16px;
+        border-radius: 25px;
+        border: 1px solid white;
+        background-color: transparent;
         color: white;
-      }
-      .header_text {
-        // margin-left: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: white;
+          color: $main-color;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
       }
 
-      .header_btn {
-        // margin-right: 40px;
+      .header_text {
+        font-weight: 500;
       }
     }
   }
 
   .header_nav-ad-address {
     display: flex;
-    height: 170px;
+    padding: 20px 0;
     margin: 0 auto;
     max-width: $width-content;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     .nav-address {
       display: flex;
-      max-width: 450px;
-      // background-color: aqua;
+      align-items: center;
+      gap: 20px;
 
-      .div-address {
-        // width: 400px;
+      .logo {
+        width: 120px;
+        height: auto;
+        transition: transform 0.3s ease;
 
-        h2 {
-          text-align: left;
-          margin-left: 25px;
-          font-size: 30px;
-        }
-        p {
-          text-align: left;
-          padding-left: 26px;
-          font-size: 18px;
-        }
-        .div-a {
-          margin-top: 5px;
-          text-align: left;
-          padding-left: 26px;
-          font-size: 18px;
+        &:hover {
+          transform: scale(1.05);
         }
       }
-    }
 
-    .logo {
-      width: 200px;
+      .div-address {
+        h2 {
+          margin: 0;
+          font-size: 28px;
+          color: $main-text;
+          font-weight: 700;
+        }
+
+        p {
+          margin: 5px 0;
+          font-size: 14px;
+          color: lighten($main-text, 20%);
+        }
+
+        .contact-links {
+          display: flex;
+          gap: 15px;
+          margin-top: 8px;
+
+          a {
+            color: $main-text;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $a-color;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
 
     .nav-callback-btn {
-      justify-content: center;
-      text-align: center;
       background-color: $main-color;
-      margin-top: 20px;
-      font-size: 20px;
-      padding: 10px 12px;
-      border-radius: 15px;
       color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
       cursor: pointer;
-      border: 0.3px solid black;
-      transition: color 0.4s ease;
-      // height: 300px;
-      // background-color: beige;
-    }
-    .nav-callback-btn:hover {
-      background-color: white;
-      color: black;
+      transition: all 0.3s ease;
+      height: fit-content;
+
+      &:hover {
+        background-color: darken($main-color, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
     }
   }
+
   .nav-bar {
-    // display: flex;
-    max-width: $width-content;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
+    background-color: white;
+    padding: 0 20px;
+
     .header_nav-list {
-      margin: 0 auto;
       display: flex;
       justify-content: center;
-
-      gap: 20px;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      gap: 10px;
+      max-width: $width-content;
 
       .header_nav-item {
-        padding: 10px;
-        font-size: 22px;
+        padding: 15px 20px;
+        font-size: 18px;
         cursor: pointer;
-        // border-right: 2px solid black;
-      }
+        color: $main-text;
+        position: relative;
+        transition: all 0.3s ease;
+        font-weight: 500;
 
-      // .header_nav-item:last-child {
-      //   border-right: none;
-      // }
-      // .header_nav-item::after {
-      //   border: 2px solid #2a2e49;
-      // }
+        &:hover {
+          color: $main-color;
+
+          &::after {
+            width: 100%;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: $main-color;
+          transition: width 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+// Адаптивные стили
+@media (max-width: 1024px) {
+  .header-nav {
+    .header_nav-ad-address {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+
+      .nav-address {
+        flex-direction: column;
+        text-align: center;
+
+        .div-address {
+          h2,
+          p,
+          .contact-links {
+            text-align: center;
+            margin-left: 0;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    .nav-bar {
+      .header_nav-list {
+        flex-wrap: wrap;
+        gap: 5px;
+
+        .header_nav-item {
+          padding: 10px 15px;
+          font-size: 16px;
+        }
+      }
     }
   }
 }
