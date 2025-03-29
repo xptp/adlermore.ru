@@ -53,9 +53,9 @@
   max-width: $width-max;
   height: 900px;
   // background-image: url(https://hotel-blacksea.com/img/galleryfull39.jpg);
-  background-image: url(https://wikiway.com/upload/hl-photo/871/adler_93.jpg);
+  background-image: url("../../../../public/img/test.jpg");
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
   transition: all 0.3s ease;
