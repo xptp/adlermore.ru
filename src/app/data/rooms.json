@@ -73,47 +73,251 @@
     "id": 1,
     "title": "Двухместный стандарт с доп местом",
     "description": "Привлекательный классический стандартный номер предназначен для размещения до трех гостей и предлагает комфортное пространство с широкой кроватью и дополнительным креслом-кроватью. В номере имеется все необходимое для удовлетворения потребностей гостей, включая телевизор, холодильник, кондиционер, электрочайник и полный набор мебели. Гостям также доступен собственный санузел и балкон с видом либо на бассейн либо на оживленную улицу, создающий расслабляющую атмосферу для отдыха и наслаждения прекрасным видом.",
+    "shortDescription": "Классический номер на троих гостей с широкой кроватью и дополнительным креслом-кроватью. В номере: телевизор, холодильник, кондиционер, электрочайник, санузел и балкон с видом на бассейн или улицу. Все для комфортного отдыха.",
     "size": 20,
     "img": [
       { "id": 0, "image": "/img/doubleStandardWithDop/1.webp" },
-      { "id": 1, "image": "/img/doubleStandardWithDop/2.webp" },
       { "id": 2, "image": "/img/doubleStandardWithDop/2.webp" },
-      { "id": 3, "image": "/img/doubleStandardWithDop/4.webp" },
-      { "id": 4, "image": "/img/doubleStandardWithDop/5.webp" },
-      { "id": 5, "image": "/img/doubleStandardWithDop/6.webp" },
-      { "id": 6, "image": "/img/doubleStandardWithDop/7.webp" },
-      { "id": 7, "image": "/img/doubleStandardWithDop/8.webp" },
-      { "id": 8, "image": "/img/doubleStandardWithDop/9.webp" },
-      { "id": 9, "image": "/img/doubleStandardWithDop/10.webp" },
-      { "id": 10, "image": "/img/doubleStandardWithDop/11.jpg" }
+      { "id": 3, "image": "/img/doubleStandardWithDop/3.webp" },
+      { "id": 4, "image": "/img/doubleStandardWithDop/4.webp" },
+      { "id": 5, "image": "/img/doubleStandardWithDop/5.webp" },
+      { "id": 6, "image": "/img/doubleStandardWithDop/6.webp" },
+      { "id": 7, "image": "/img/doubleStandardWithDop/7.webp" },
+      { "id": 8, "image": "/img/doubleStandardWithDop/8.webp" },
+      { "id": 9, "image": "/img/doubleStandardWithDop/9.webp" },
+      { "id": 10, "image": "/img/doubleStandardWithDop/10.webp" },
+      { "id": 11, "image": "/img/doubleStandardWithDop/11.jpg" }
+    ],
+    "other": [
+      {
+        "id": 0,
+        "name": "Оснащение номера и мебель:",
+        "info": [
+          { "id": 1, "name": "Кондиционирование/Система климат-контроля" },
+          { "id": 1, "data": "Обогреватель" },
+          { "id": 2, "data": "Сейф" },
+          { "id": 3, "data": "Шкаф/Гардероб" },
+          { "id": 4, "data": "Светонепроницаемые шторы" },
+          { "id": 5, "data": "Балкон" },
+          { "id": 10, "data": "Холодильник" },
+          { "id": 11, "data": "Чайник" },
+          { "id": 12, "data": "Телевизор" },
+          { "id": 13, "data": "WiFi" }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Ванная комната:",
+        "info": [
+          { "id": 6, "data": "Собственный санузел" },
+          { "id": 7, "data": "Туалетно-косметические принадлежности" },
+          { "id": 8, "data": "Душ" },
+          { "id": 9, "data": "Фен" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Вид:",
+        "info": [{ "id": 14, "data": "Вид на город" }]
+      },
+      {
+        "id": 3,
+        "name": "Услуги:",
+        "info": [{ "id": 14, "data": "Хранение багажа" }]
+      }
     ]
   },
   {
     "id": 2,
+    "title": "Двухместный стандарт с доп местом ",
+    "description": "Привлекательный классический стандартный номер предназначен для размещения до трех гостей и предлагает комфортное пространство с широкой кроватью,новыми ортопедическими матрасами и дополнительным креслом-кроватью. В номере имеется все необходимое для удовлетворения потребностей гостей, включая телевизор, холодильник, кондиционер, электрочайник и полный набор мебели. Гостям также доступен собственный санузел и балкон с видом либо на бассейн либо на оживленную улицу, создающий расслабляющую атмосферу для отдыха и наслаждения прекрасным видом",
+    "shortDescription": "Уютный классический номер (до 3-х гостей) с широкой кроватью (ортопедические матрасы) и креслом-кроватью. В номере: телевизор, холодильник, кондиционер, электрочайник, санузел и балкон (вид на бассейн или улицу). Всё для комфортного отдыха!",
+    "size": 20,
+    "img": [
+      { "id": 0, "image": "/img/doubleStandardWithDop/1.webp" },
+      { "id": 2, "image": "/img/doubleStandardWithDop/2.webp" },
+      { "id": 3, "image": "/img/doubleStandardWithDop/3.webp" },
+      { "id": 4, "image": "/img/doubleStandardWithDop/4.webp" },
+      { "id": 5, "image": "/img/doubleStandardWithDop/5.webp" },
+      { "id": 6, "image": "/img/doubleStandardWithDop/6.webp" },
+      { "id": 7, "image": "/img/doubleStandardWithDop/7.webp" },
+      { "id": 8, "image": "/img/doubleStandardWithDop/8.webp" },
+      { "id": 9, "image": "/img/doubleStandardWithDop/9.webp" },
+      { "id": 10, "image": "/img/doubleStandardWithDop/10.webp" },
+      { "id": 11, "image": "/img/doubleStandardWithDop/11.jpg" }
+    ],
+    "other": [
+      {
+        "id": 0,
+        "name": "Оснащение номера и мебель:",
+        "info": [
+          { "id": 1, "name": "Кондиционирование/Система климат-контроля" },
+          { "id": 1, "data": "Обогреватель" },
+          { "id": 2, "data": "Сейф" },
+          { "id": 3, "data": "Шкаф/Гардероб" },
+          { "id": 4, "data": "Светонепроницаемые шторы" },
+          { "id": 5, "data": "Балкон" },
+          { "id": 10, "data": "Холодильник" },
+          { "id": 11, "data": "Чайник" },
+          { "id": 12, "data": "Телевизор" },
+          { "id": 13, "data": "WiFi" }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Ванная комната:",
+        "info": [
+          { "id": 6, "data": "Собственный санузел" },
+          { "id": 7, "data": "Туалетно-косметические принадлежности" },
+          { "id": 8, "data": "Душ" },
+          { "id": 9, "data": "Фен" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Вид:",
+        "info": [{ "id": 14, "data": "Вид на город" }]
+      },
+      {
+        "id": 3,
+        "name": "Услуги:",
+        "info": [{ "id": 14, "data": "Хранение багажа" }]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Трехместный стандарт",
+    "description": "Привлекательный классический стандартный номер предназначен для размещения до трех гостей и предлагает комфортное пространство с широкой кроватью и дополнительным кроватью. В номере имеется все необходимое для удовлетворения потребностей гостей, включая телевизор, холодильник, кондиционер, электрочайник и полный набор мебели. Гостям также доступен собственный санузел и балкон с видом либо на бассейн либо на оживленную улицу, создающий расслабляющую атмосферу для отдыха и наслаждения прекрасным видом.",
+    "shortDescription": "Классический номер на троих с широкой кроватью и дополнительным спальным местом. В номере: телевизор, холодильник, кондиционер, электрочайник, санузел и балкон с видом на бассейн или улицу. Все для вашего комфортного отдыха!",
+    "size": 20,
+    "img": [
+      { "id": 0, "image": "/img/tripleStandard/1.webp" },
+      { "id": 2, "image": "/img/tripleStandard/2.jpg" },
+      { "id": 3, "image": "/img/tripleStandard/2.webp" },
+      { "id": 4, "image": "/img/tripleStandard/3.webp" },
+      { "id": 5, "image": "/img/tripleStandard/4.jpg" },
+      { "id": 6, "image": "/img/tripleStandard/4.webp" },
+      { "id": 7, "image": "/img/tripleStandard/5.jpg" },
+      { "id": 8, "image": "/img/tripleStandard/6.webp" },
+      { "id": 9, "image": "/img/tripleStandard/7.jpg" },
+      { "id": 10, "image": "/img/tripleStandard/7.webp" },
+      { "id": 11, "image": "/img/tripleStandard/8.jpg" },
+      { "id": 12, "image": "/img/tripleStandard/9.jpg" },
+      { "id": 13, "image": "/img/tripleStandard/10.jpg" },
+      { "id": 14, "image": "/img/tripleStandard/10.webp" },
+      { "id": 15, "image": "/img/tripleStandard/11.jpg" },
+      { "id": 16, "image": "/img/tripleStandard/12.jpg" },
+      { "id": 17, "image": "/img/tripleStandard/12.webp" },
+      { "id": 18, "image": "/img/tripleStandard/13.webp" },
+      { "id": 19, "image": "/img/tripleStandard/14.jpg" },
+      { "id": 20, "image": "/img/tripleStandard/15.webp" },
+      { "id": 20, "image": "/img/tripleStandard/222.jpg" }
+    ],
+    "other": [
+      {
+        "id": 0,
+        "name": "Оснащение номера и мебель:",
+        "info": [
+          { "id": 1, "name": "Кондиционирование/Система климат-контроля" },
+          { "id": 1, "data": "Обогреватель" },
+          { "id": 2, "data": "Сейф" },
+          { "id": 3, "data": "Шкаф/Гардероб" },
+          { "id": 4, "data": "Светонепроницаемые шторы" },
+          { "id": 5, "data": "Балкон" },
+          { "id": 10, "data": "Холодильник" },
+          { "id": 11, "data": "Чайник" },
+          { "id": 12, "data": "Телевизор" },
+          { "id": 13, "data": "WiFi" }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Ванная комната:",
+        "info": [
+          { "id": 6, "data": "Собственный санузел" },
+          { "id": 7, "data": "Туалетно-косметические принадлежности" },
+          { "id": 8, "data": "Душ" },
+          { "id": 9, "data": "Фен" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Вид:",
+        "info": [{ "id": 14, "data": "Вид на город" }]
+      },
+      {
+        "id": 3,
+        "name": "Услуги:",
+        "info": [{ "id": 14, "data": "Хранение багажа" }]
+      }
+    ]
+  },
+  {
+    "id": 4,
     "title": "Трехместный комфорт",
     "description": "Привлекательный классический стандартный номер предназначен для размещения до трех гостей и предлагает комфортное пространство с широкой кроватью и дополнительным кроватью и новыми ортопедическими матрасами. В номере имеется все необходимое для удовлетворения потребностей гостей, включая телевизор, холодильник, кондиционер, электрочайник и полный набор мебели. Гостям также доступен собственный санузел и балкон с видом либо на бассейн либо на оживленную улицу, создающий расслабляющую атмосферу для отдыха и наслаждения прекрасным видом.",
+    "shortDescription": "Уютный классический номер на троих с широкой кроватью и дополнительным спальным местом (новые ортопедические матрасы). В номере есть всё для комфорта: телевизор, холодильник, кондиционер, электрочайник, санузел и балкон с видом на бассейн или улицу. Идеальное место для отдыха!",
     "size": 25,
     "img": [
       { "id": 0, "image": "/img/tripleСomfort/2.jpg" },
-      { "id": 1, "image": "/img/tripleСomfort/3.jpg" },
-      { "id": 2, "image": "/img/tripleСomfort/4.jpg" },
-      { "id": 3, "image": "/img/tripleСomfort/5.jpg" },
-      { "id": 4, "image": "/img/tripleСomfort/6.webp" },
-      { "id": 5, "image": "/img/tripleСomfort/7.webp" },
-      { "id": 6, "image": "/img/tripleСomfort/8.webp" },
-      { "id": 7, "image": "/img/tripleСomfort/9.webp" },
-      { "id": 8, "image": "/img/tripleСomfort/10.webp" },
-      { "id": 9, "image": "/img/tripleСomfort/11.webp" },
-      { "id": 10, "image": "/img/tripleСomfort/12.webp" },
-      { "id": 11, "image": "/img/tripleСomfort/13.webp" },
-      { "id": 12, "image": "/img/tripleСomfort/14.webp" },
-      { "id": 13, "image": "/img/tripleСomfort/15.jpg" },
-      { "id": 14, "image": "/img/tripleСomfort/16.jpg" },
-      { "id": 15, "image": "/img/tripleСomfort/17.jpg" },
-      { "id": 16, "image": "/img/tripleСomfort/18.webp" },
-      { "id": 17, "image": "/img/tripleСomfort/19.webp" },
-      { "id": 18, "image": "/img/tripleСomfort/20.jpg" },
-      { "id": 19, "image": "/img/tripleСomfort/21.jpg" }
+      { "id": 2, "image": "/img/tripleСomfort/3.jpg" },
+      { "id": 3, "image": "/img/tripleСomfort/4.jpg" },
+      { "id": 4, "image": "/img/tripleСomfort/5.jpg" },
+      { "id": 5, "image": "/img/tripleСomfort/6.webp" },
+      { "id": 6, "image": "/img/tripleСomfort/7.webp" },
+      { "id": 7, "image": "/img/tripleСomfort/8.webp" },
+      { "id": 8, "image": "/img/tripleСomfort/9.webp" },
+      { "id": 9, "image": "/img/tripleСomfort/10.webp" },
+      { "id": 10, "image": "/img/tripleСomfort/11.webp" },
+      { "id": 11, "image": "/img/tripleСomfort/12.webp" },
+      { "id": 12, "image": "/img/tripleСomfort/13.webp" },
+      { "id": 13, "image": "/img/tripleСomfort/14.webp" },
+      { "id": 14, "image": "/img/tripleСomfort/15.jpg" },
+      { "id": 15, "image": "/img/tripleСomfort/16.jpg" },
+      { "id": 16, "image": "/img/tripleСomfort/17.jpg" },
+      { "id": 17, "image": "/img/tripleСomfort/18.webp" },
+      { "id": 18, "image": "/img/tripleСomfort/19.webp" },
+      { "id": 19, "image": "/img/tripleСomfort/20.jpg" },
+      { "id": 20, "image": "/img/tripleСomfort/21.jpg" }
+    ],
+    "other": [
+      {
+        "id": 0,
+        "name": "Оснащение номера и мебель:",
+        "info": [
+          { "id": 1, "name": "Кондиционирование/Система климат-контроля" },
+          { "id": 1, "data": "Обогреватель" },
+          { "id": 2, "data": "Сейф" },
+          { "id": 3, "data": "Шкаф/Гардероб" },
+          { "id": 4, "data": "Светонепроницаемые шторы" },
+          { "id": 5, "data": "Балкон" },
+          { "id": 10, "data": "Холодильник" },
+          { "id": 11, "data": "Чайник" },
+          { "id": 12, "data": "Телевизор" },
+          { "id": 13, "data": "WiFi" }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Ванная комната:",
+        "info": [
+          { "id": 6, "data": "Собственный санузел" },
+          { "id": 7, "data": "Туалетно-косметические принадлежности" },
+          { "id": 8, "data": "Душ" },
+          { "id": 9, "data": "Фен" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Вид:",
+        "info": [{ "id": 14, "data": "Вид на город" }]
+      },
+      {
+        "id": 3,
+        "name": "Услуги:",
+        "info": [{ "id": 14, "data": "Хранение багажа" }]
+      }
     ]
   }
 ]
