@@ -36,7 +36,16 @@ const NavBar = () => {
 
       <nav className="nav-bar">
         <ul className="header_nav-list">
-          <li className="header_nav-item">Отель</li>
+          <li
+            className="header_nav-item"
+            onClick={() =>
+              document
+                .getElementById("hotel-section")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Отель
+          </li>
           <li
             className="header_nav-item"
             onClick={() =>
@@ -57,7 +66,7 @@ const NavBar = () => {
           >
             Номера
           </li>
-          <li
+          {/* <li
             className="header_nav-item"
             onClick={() =>
               document
@@ -66,8 +75,17 @@ const NavBar = () => {
             }
           >
             Контакты
+          </li> */}
+          <li
+            onClick={() =>
+              document
+                .getElementById("gallery-section")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+            className="header_nav-item"
+          >
+            Галерея
           </li>
-          <li className="header_nav-item">Галерея</li>
         </ul>
       </nav>
     </div>

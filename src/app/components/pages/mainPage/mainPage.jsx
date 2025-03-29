@@ -50,7 +50,7 @@ const MainPage = () => {
           src="https://hotel-blacksea.com/img/three_photos_new.webp"
           alt=""
         /> */}
-        <div className="info-description">
+        <div className="info-description" id="hotel-section">
           <h2>О НАС</h2>
           <div className="info-des-short">
             Планируете отпуск в России? <strong>Адлер ждёт вас!</strong>
@@ -135,8 +135,10 @@ const MainPage = () => {
 
       <Gallery />
 
-      <h2 className="contacts-h2">Информация</h2>
-      <div className="info-hotel" id="info-section">
+      <h2 className="contacts-h2" id="info-section">
+        Информация
+      </h2>
+      <div className="info-hotel">
         <InfoHotel />
       </div>
       <h2 className="contacts-h2">Как нас найти</h2>

@@ -6,7 +6,16 @@ const NavBarScroll = () => {
     <div className="header-nav-scroll visible">
       <nav className="nav-bar-scroll">
         <ul className="header_nav-list-scroll">
-          <li className="header_nav-item-scroll">Отель</li>
+          <li
+            className="header_nav-item-scroll"
+            onClick={() =>
+              document
+                .getElementById("hotel-section")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Отель
+          </li>
           <li
             className="header_nav-item-scroll"
             onClick={() =>
@@ -31,13 +40,12 @@ const NavBarScroll = () => {
             className="header_nav-item-scroll"
             onClick={() =>
               document
-                .getElementById("contacts-section")
+                .getElementById("gallery-section")
                 .scrollIntoView({ behavior: "smooth" })
             }
           >
-            Контакты
+            Галерея
           </li>
-          <li className="header_nav-item-scroll">и ещё кнопка</li>
         </ul>
       </nav>
     </div>
