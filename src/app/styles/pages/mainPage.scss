@@ -51,11 +51,15 @@
 
 .img-block {
   max-width: $width-max;
+  // max-width: $width-content;
+  // max-width: 1500px;
+  margin: 0 auto;
   height: 900px;
   // background-image: url(https://hotel-blacksea.com/img/galleryfull39.jpg);
-  background-image: url("../../../../public/img/test.jpg");
+  background-image: url(https://avatars.mds.yandex.net/i?id=c66d383a2842aa3f5ec532a91c5fecbe_l-5230359-images-thumbs&ref=rim&n=13&w=1280&h=720);
+  // background-image: url("../../../../public/img/test.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center left;
   background-repeat: no-repeat;
   position: relative;
   transition: all 0.3s ease;
@@ -89,13 +93,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0); // Начальный прозрачный фон
+    background: rgba(0, 0, 0, 0);
     transition: background 0.3s ease;
     z-index: 0;
   }
 
   &:hover::before {
-    background: rgba(0, 0, 0, 0.1); // 10% затемнение фона
+    background: rgba(0, 0, 0, 0.1);
   }
 
   // Контент должен быть выше псевдоэлемента
@@ -108,7 +112,7 @@
 // блок О нас
 .info {
   display: flex;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   max-width: 1200px;
   padding: 40px 20px;
   background-color: $backgound-color;
@@ -125,7 +129,7 @@
 
     h2 {
       font-size: 36px;
-      margin-top: 0;
+      margin-top: 30px;
       margin-bottom: 20px;
       color: $main-color;
       position: relative;
@@ -136,7 +140,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 80px;
+        width: 115px;
         height: 3px;
         background-color: $a-color;
       }
@@ -191,24 +195,24 @@
   margin-bottom: 100px;
   position: relative;
 
-  h2 {
-    font-size: 42px;
-    text-align: left;
-    margin-bottom: 40px;
-    color: $main-text;
-    position: relative;
-    padding-bottom: 15px;
+  // h2 {
+  //   font-size: 42px;
+  //   text-align: left;
+  //   margin-bottom: 40px;
+  //   color: $main-text;
+  //   position: relative;
+  //   padding-bottom: 15px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 80px;
-      height: 3px;
-      background: $main-color;
-    }
-  }
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     bottom: 0;
+  //     left: 0;
+  //     // width: 180px;
+  //     height: 3px;
+  //     background: $main-color;
+  //   }
+  // }
 
   .services-background-block {
     // background-image: url(https://avatars.mds.yandex.net/get-altay/6057477/2a00000180c7ec8be59e4d690b814261db60/XXXL);
@@ -261,7 +265,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 50px;
+        width: 160px;
         height: 2px;
         background: $a-color;
       }

@@ -1,17 +1,17 @@
 import React from "react";
 import "../../styles/ui/navBar.scss";
-
+import { FaTelegram, FaWhatsapp } from "react-icons/fa";
 const NavBar = () => {
   return (
     <div className="header-nav">
-      <div className="header">
+      {/* <div className="header">
         <div className="header-content">
           <div className="header_text">Мы находимся в самом центре Адлера</div>
           <div className="header_btn">
             <button className="message-btn">Написать сообщение</button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="header_nav-ad-address">
         <div className="nav-address">
@@ -30,7 +30,15 @@ const NavBar = () => {
           </div>
         </div>
         <div className="div_nav-callback">
-          <button className="nav-callback-btn">Обратный звонок</button>
+          <button className="nav-callback-btn">Заказать обратный звонок</button>
+          <div className="tel-what">
+            <a href="" className="telegram">
+              <FaTelegram />
+            </a>
+            <a href="" className="whatsapp">
+              <FaWhatsapp />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -66,23 +74,29 @@ const NavBar = () => {
           >
             Номера
           </li>
-          {/* <li
-            className="header_nav-item"
-            onClick={() =>
-              document
-                .getElementById("contacts-section")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            Контакты
-          </li> */}
           <li
-            onClick={() =>
-              document
-                .getElementById("gallery-section")
-                .scrollIntoView({ behavior: "smooth" })
-            }
             className="header_nav-item"
+            // onClick={() =>
+            //   document
+            //     .getElementById("rooms-section")
+            //     .scrollIntoView({ behavior: "smooth" })
+            // }
+          >
+            Забронировать
+          </li>
+          <li
+            className="header_nav-item"
+            // onClick={() =>
+            //   document
+            //     .getElementById("gallery-section")
+            //     .scrollIntoView({ behavior: "smooth" })
+            // }
+            onClick={() => {
+              const element = document.getElementById("gallery-section");
+              const yOffset =
+                element.getBoundingClientRect().top + window.pageYOffset - 50;
+              window.scrollTo({ top: yOffset, behavior: "smooth" });
+            }}
           >
             Галерея
           </li>

@@ -29,15 +29,15 @@
     position: relative;
     padding-bottom: 8px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 50px;
-      height: 2px;
-      background: $a-color;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 50px;
+    //   height: 2px;
+    //   background: $a-color;
+    // }
   }
 
   a {
@@ -45,10 +45,20 @@
     color: $main-text;
     text-decoration: none;
     transition: color 0.2s;
+    position: relative;
 
     &:hover {
       color: $a-color;
-      text-decoration: underline;
+      // text-decoration: underline;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 170px;
+      height: 2px;
+      background: $a-color;
     }
   }
 }

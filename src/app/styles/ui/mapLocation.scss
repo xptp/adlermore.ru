@@ -20,28 +20,51 @@
 
   .contacts {
     text-align: left;
+    width: 550px;
     background: rgba(255, 255, 255, 0.95);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     margin-right: 30px;
     border-top: 3px solid $main-color;
+    position: relative;
 
-    h3 {
-      margin-top: 20px;
-      font-size: 26px;
-      color: $main-color;
+    .h3-a-container {
+      // background-color: aqua;
+      width: 100%;
       position: relative;
-      padding-bottom: 10px;
+      // display: flex;
+      // justify-content: space-between;
+      h3 {
+        // margin-left: 20px;
+        margin-top: 20px;
+        font-size: 26px;
+        color: $main-color;
+        position: relative;
+        padding-bottom: 10px;
+        // margin-right: 150px;
 
-      &::after {
-        content: "";
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 150px;
+          height: 2px;
+          background: $a-color;
+        }
+      }
+      a {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 50px;
-        height: 2px;
-        background: $a-color;
+        right: -155px;
+        top: -10px;
+        font-size: 18px;
+        color: $main-text;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $a-color;
+        }
       }
     }
 
@@ -52,17 +75,8 @@
       line-height: 1.5;
     }
 
-    a {
-      font-size: 18px;
-      color: $main-text;
-      transition: color 0.2s;
-
-      &:hover {
-        color: $a-color;
-      }
-    }
-
     .route-btn {
+      // background-color: black;
       margin-top: 10px;
       display: flex;
       align-items: center;
@@ -76,15 +90,6 @@
       color: $main-color;
       background: white;
       transition: all 0.3s ease;
-
-      .arrow-btn {
-        font-size: 25px;
-        align-items: center;
-        padding-top: 5px;
-        transition: transform 0.3s ease;
-        margin-right: 10px;
-        color: $main-color;
-      }
 
       &:hover {
         background: $main-color;
@@ -102,10 +107,14 @@
 .weather-clock-block {
   justify-content: left;
   align-items: left;
-  display: block;
-  margin-top: 20px;
-}
+  display: flex;
 
+  position: absolute;
+  bottom: 20px;
+}
+.weather-clock-block > * + * {
+  margin-left: 30px;
+}
 .card {
   opacity: 1;
   transform: translateY(40px) scale(0.8);

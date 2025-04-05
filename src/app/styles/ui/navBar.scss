@@ -7,43 +7,43 @@
   position: relative;
   z-index: 100;
 
-  .header {
-    background-color: $main-color;
-    color: white;
+  // .header {
+  //   background-color: $main-color;
+  //   color: white;
 
-    .header-content {
-      display: flex;
-      margin: 0 auto;
-      height: 50px;
-      font-size: 16px;
-      justify-content: space-between;
-      align-items: center;
-      width: $width-content;
-      padding: 0 20px;
+  //   .header-content {
+  //     display: flex;
+  //     margin: 0 auto;
+  //     height: 50px;
+  //     font-size: 16px;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     width: $width-content;
+  //     padding: 0 20px;
 
-      .message-btn {
-        font-size: 16px;
-        padding: 8px 16px;
-        border-radius: 25px;
-        border: 1px solid white;
-        background-color: transparent;
-        color: white;
-        cursor: pointer;
-        transition: all 0.3s ease;
+  //     .message-btn {
+  //       font-size: 16px;
+  //       padding: 8px 16px;
+  //       border-radius: 25px;
+  //       border: 1px solid white;
+  //       background-color: transparent;
+  //       color: white;
+  //       cursor: pointer;
+  //       transition: all 0.3s ease;
 
-        &:hover {
-          background-color: white;
-          color: $main-color;
-          transform: translateY(-2px);
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-      }
+  //       &:hover {
+  //         background-color: white;
+  //         color: $main-color;
+  //         transform: translateY(-2px);
+  //         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  //       }
+  //     }
 
-      .header_text {
-        font-weight: 500;
-      }
-    }
-  }
+  //     .header_text {
+  //       font-weight: 500;
+  //     }
+  //   }
+  // }
 
   .header_nav-ad-address {
     display: flex;
@@ -103,7 +103,9 @@
         }
       }
     }
-
+    // .div_nav-callback {
+    //   background-color: aqua;
+    // }
     .nav-callback-btn {
       background-color: $main-color;
       color: white;
@@ -119,6 +121,18 @@
         background-color: darken($main-color, 10%);
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+    .tel-what {
+      // background-color: rgb(99, 245, 245);
+      text-align: right;
+      font-size: 50px;
+      .telegram {
+        color: #3390ec;
+      }
+      .whatsapp {
+        color: #00d757;
+        margin: 0 10px 0 10px;
       }
     }
   }

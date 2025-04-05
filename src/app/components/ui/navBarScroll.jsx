@@ -38,11 +38,27 @@ const NavBarScroll = () => {
           </li>
           <li
             className="header_nav-item-scroll"
-            onClick={() =>
-              document
-                .getElementById("gallery-section")
-                .scrollIntoView({ behavior: "smooth" })
-            }
+            // onClick={() =>
+            //   document
+            //     .getElementById("rooms-section")
+            //     .scrollIntoView({ behavior: "smooth" })
+            // }
+          >
+            Забронировать
+          </li>
+          <li
+            className="header_nav-item-scroll"
+            // onClick={() =>
+            //   document
+            //     .getElementById("gallery-section")
+            //     .scrollIntoView({ behavior: "smooth" })
+            // }
+            onClick={() => {
+              const element = document.getElementById("gallery-section");
+              const yOffset =
+                element.getBoundingClientRect().top + window.pageYOffset - 50;
+              window.scrollTo({ top: yOffset, behavior: "smooth" });
+            }}
           >
             Галерея
           </li>

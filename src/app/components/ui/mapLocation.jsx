@@ -1,5 +1,4 @@
 import React from "react";
-import { HiArrowLongRight } from "react-icons/hi2";
 import "../../styles/ui/mapLocation.scss";
 import WeatherWidget from "./weather";
 import UsefulInfo from "./clock";
@@ -8,22 +7,31 @@ const MapLocation = () => {
   return (
     <>
       <div className="contacts">
-        <h3>Адрес</h3>
+        <div className="h3-a-container">
+          <h3>Наш адрес</h3>
+          <a
+            href="https://yandex.ru/maps/239/sochi/?from=mapframe&ll=39.895485%2C43.476799&mode=routes&rtext=~43.476131%2C39.895524&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D1126085566&source=mapframe&utm_source=mapframe&z=18"
+            className="route-btn"
+            target="blank"
+          >
+            Построить маршурт
+          </a>
+        </div>
         <p>
           Краснодарский край, Сочи, жилой район Адлер, переулок
           <br /> Чкалова, 9А
         </p>
-
-        <a
-          href="https://yandex.ru/maps/239/sochi/?from=mapframe&ll=39.895485%2C43.476799&mode=routes&rtext=~43.476131%2C39.895524&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D1126085566&source=mapframe&utm_source=mapframe&z=18"
-          className="route-btn"
-          target="blank"
-        >
-          <div className="arrow-btn">
-            <HiArrowLongRight />
-          </div>
-          Построить маршурт
-        </a>
+        <h3>В пешей доступности:</h3>
+        Муниципальный оборудованный пляж в 5 минутах. Прогулочный зелёный парк.
+        Океанариум. Дельфинарий. Террариум. Парк аттракционов. Множество точек
+        общественного питания. Сетевые продуктовые магазины. Ж/д вокзал в 10
+        минутах. Аэропорт Сочи
+        {/* <p>
+          Муниципальный оборудованный пляж в 5 минутах. <br /> Прогулочный
+          зелёный парк. <br /> Океанариум. <br />
+          Дельфинарий. <br /> Террариум. <br /> Парк аттракционов. Множество
+          точек общественного питания. Сетевые продуктовые магазины.
+        </p> */}
         <div className="weather-clock-block">
           <UsefulInfo />
           <WeatherWidget />
