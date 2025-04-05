@@ -181,6 +181,17 @@
     color: lighten($main-text, 15%);
     line-height: 1.6;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      width: 600px;
+      font-size: 24px;
+    }
+    img {
+      width: 600px;
+      height: 600px;
+      object-fit: cover;
+    }
 
     &:last-child {
       margin-bottom: 0;

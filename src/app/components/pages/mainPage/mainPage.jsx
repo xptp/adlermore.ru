@@ -4,11 +4,15 @@ import "../../../styles/pages/mainPage.scss";
 import Carousel from "../../ui/Carousel";
 import { MdOutlineArrowCircleUp } from "react-icons/md";
 import BookingImg from "../../ui/bookingImg";
-import MapLocation from "../../ui/mapLocation";
+import MapLocation from "./../../ui/mapLocation";
 import rooms from "../../../data/rooms.json";
 import NavBarScroll from "../../ui/navBarScroll";
 import InfoHotel from "../../ui/infoHotel";
 import Gallery from "../../ui/gallery";
+import FancyWave from "./test";
+import WaveAnimation from "./test";
+// import { ReactComponent as Wave } from "./test";
+// import FancyWave, { ReactComponent as Wave } from "./test";
 
 const MainPage = () => {
   const [showStickyNav, setShowStickyNav] = useState(false);
@@ -50,18 +54,23 @@ const MainPage = () => {
           src="https://hotel-blacksea.com/img/three_photos_new.webp"
           alt=""
         /> */}
+
         <div className="info-description" id="hotel-section">
           <h2>О НАС</h2>
           <div className="info-des-short">
             Планируете отпуск в России? <strong>Адлер ждёт вас!</strong>
           </div>
+
           <div className="info-des-long">
-            Отдых в сердце Адлера! Район Курортного городка! Здесь есть всё для
-            вашего комфортного отдыха. Муниципальный оборудованный пляж в 5
-            минутах. Прогулочный зелёный парк. Океанариум. Дельфинарий.
-            Террариум. Парк аттракционов. Множество точек общественного питания.
-            Сетевые продуктовые магазины. Ж/д вокзал в 10 минутах. Аэропорт Сочи
-            в 15 минутах.
+            <p>
+              Отдых в сердце Адлера! Район Курортного городка! Здесь есть всё
+              для вашего комфортного отдыха. Муниципальный оборудованный пляж в
+              5 минутах. Прогулочный зелёный парк. Океанариум. Дельфинарий.
+              Террариум. Парк аттракционов. Множество точек общественного
+              питания. Сетевые продуктовые магазины. Ж/д вокзал в 10 минутах.
+              Аэропорт Сочи в 15 минутах.
+            </p>
+            <img src="./img/mapTest.png" alt="" />
           </div>
           <div className="info-des-long">
             Гостевой дом «Море» оснащён огромным выбором номерного фонда. Теплый
@@ -72,12 +81,13 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-
+      {/* <div className="ttttt"></div> */}
       <div id="rooms-section">
+        <WaveAnimation />
         <Carousel items={rooms} />
       </div>
 
-      <div className="services-block">
+      {/* <div className="services-block">
         <h2></h2>
         <div className="services-background-block">
           <div className="services-white-block">
@@ -92,7 +102,7 @@ const MainPage = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="advantages-block">
         <h2>Наши преимущества</h2>

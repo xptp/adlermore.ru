@@ -4,6 +4,7 @@
   width: 100%;
   position: relative;
   margin-bottom: 100px;
+  background-color: $main-color;
 }
 
 // img Swiper
@@ -40,7 +41,7 @@
     // flex-direction: column;
     justify-content: center;
     // align-items: center;
-    padding: 20px;
+    padding: 30px;
     position: relative;
     flex-shrink: 0;
   }

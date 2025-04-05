@@ -1,4 +1,12 @@
 @import "../variables.scss";
+.TEST {
+  position: absolute;
+  width: $width-max;
+  // top: 1700px;
+  left: 0;
+  bottom: -4990px;
+  // margin: 0 auto;
+}
 .gallery-container {
   width: 100%;
   height: 800px;
