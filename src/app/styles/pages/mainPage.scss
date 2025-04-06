@@ -2,7 +2,7 @@
 .main-page {
   display: block;
   text-align: center;
-
+  position: relative;
   margin: 0 auto;
   max-width: $width-max;
   color: $main-text;
@@ -127,6 +127,37 @@
     position: relative;
     width: 100%;
 
+    .about-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 0;
+      .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .about-text {
+        flex: 1;
+        min-width: 300px;
+      }
+      p {
+        font-size: 22px;
+      }
+
+      .about-map {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .about-map iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+      }
+    }
+
     h2 {
       font-size: 36px;
       margin-top: 30px;
@@ -176,7 +207,7 @@
   }
 
   .info-des-long {
-    font-size: 20px;
+    font-size: 24px;
     padding-bottom: 20px;
     color: lighten($main-text, 15%);
     line-height: 1.6;
@@ -329,7 +360,7 @@
   margin: 30px auto;
   margin-bottom: 100px;
   max-width: $width-max;
-  background-color: $main-color;
+  // background-color: $main-color;
 }
 
 //Блок клиентов
@@ -355,24 +386,44 @@
 //ОТзывы
 .reviews {
   // background-color: aqua;
-  max-width: $width-content;
-  margin: 50px auto;
+  max-width: $width-max;
+  // margin: 50px auto 0 auto;
+  background-color: $main-color;
+  // margin: 0 auto;
   text-align: center;
+  position: relative;
   justify-content: center;
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
+  // height: 700px;
 }
 // Карта
 // .map-contacts {
 
 // }
 //Footer
+
 .footer {
   max-width: $width-max;
   background-color: $main-color;
+  margin: 0 auto;
   text-align: center;
   justify-content: center;
-  height: 250px;
+  position: relative;
 
+  // height: 250px;
+  .TEST {
+    position: absolute;
+    // position: fixed;
+    // width: $width-max;
+    // top: -2000px;
+    // bottom: 2350px;
+    bottom: 1430px;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    // bottom: -4990px;
+    // margin: 0 auto;
+  }
   div {
     position: relative;
     justify-content: center;

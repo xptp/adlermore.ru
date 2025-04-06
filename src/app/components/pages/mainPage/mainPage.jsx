@@ -11,6 +11,7 @@ import InfoHotel from "../../ui/infoHotel";
 import Gallery from "../../ui/gallery";
 import FancyWave from "./test";
 import WaveAnimation from "./test";
+import FishAnimation from "../../ui/fish";
 // import { ReactComponent as Wave } from "./test";
 // import FancyWave, { ReactComponent as Wave } from "./test";
 
@@ -56,21 +57,31 @@ const MainPage = () => {
         /> */}
 
         <div className="info-description" id="hotel-section">
-          <h2>О НАС</h2>
-          <div className="info-des-short">
-            Планируете отпуск в России? <strong>Адлер ждёт вас!</strong>
-          </div>
-
-          <div className="info-des-long">
-            <p>
-              Отдых в сердце Адлера! Район Курортного городка! Здесь есть всё
-              для вашего комфортного отдыха. Муниципальный оборудованный пляж в
-              5 минутах. Прогулочный зелёный парк. Океанариум. Дельфинарий.
-              Террариум. Парк аттракционов. Множество точек общественного
-              питания. Сетевые продуктовые магазины. Ж/д вокзал в 10 минутах.
-              Аэропорт Сочи в 15 минутах.
-            </p>
-            <img src="./img/mapTest.png" alt="" />
+          <div className="about-container">
+            <div className="about-content">
+              <div className="about-text">
+                <h2>О НАС</h2>
+                <div className="info-des-short">
+                  Планируете отпуск в России? <strong>Адлер ждёт вас!</strong>
+                </div>
+                <p>
+                  Отдых в сердце Адлера! Район Курортного городка! Здесь есть
+                  всё для вашего комфортного отдыха. Муниципальный оборудованный
+                  пляж в 5 минутах. Прогулочный зелёный парк. Океанариум.
+                  Дельфинарий. Террариум. Парк аттракционов. Множество точек
+                  общественного питания. Сетевые продуктовые магазины. Ж/д
+                  вокзал в 10 минутах. Аэропорт Сочи в 15 минутах.
+                </p>
+              </div>
+              <div className="about-map">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a446ffe2e0114f9e8cadbe2c1c8c363a3bad91779196094fbeb387cf0e8e50f&amp;source=constructor"
+                  width="513"
+                  height="600"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
           </div>
           <div className="info-des-long">
             Гостевой дом «Море» оснащён огромным выбором номерного фонда. Теплый
@@ -83,7 +94,6 @@ const MainPage = () => {
       </div>
       {/* <div className="ttttt"></div> */}
       <div id="rooms-section">
-        <WaveAnimation />
         <Carousel items={rooms} />
       </div>
 
@@ -151,12 +161,15 @@ const MainPage = () => {
       <div className="info-hotel">
         <InfoHotel />
       </div>
-      <h2 className="contacts-h2">Как нас найти</h2>
+
+      <h2 className="h2-color-white">Как нас найти</h2>
 
       <div className="map-contacts" id="contacts-section">
         <MapLocation />
       </div>
+
       <div className="reviews">
+        <FishAnimation />
         <div
           style={{
             margin: "0 auto",
@@ -169,7 +182,7 @@ const MainPage = () => {
           <iframe
             style={{
               width: "100%",
-              height: "100%",
+              height: "90%",
               border: "1px solid #e6e6e6",
               borderRadius: "8px",
               boxSizing: "border-box",
@@ -177,40 +190,12 @@ const MainPage = () => {
             src="https://yandex.ru/maps-reviews-widget/1126085566?comments&sort=rating_desc"
             title="Yandex Map Widget"
           ></iframe>
-          <a
-            href="https://yandex.ru/maps/org/more/1126085566/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              boxSizing: "border-box",
-              textDecoration: "none",
-              color: "#b3b3b3",
-              fontSize: "10px",
-              fontFamily: "YS Text, sans-serif",
-              padding: "0 20px",
-              position: "absolute",
-              bottom: "8px",
-              width: "100%",
-              textAlign: "center",
-              left: "0",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              display: "block",
-              maxHeight: "14px",
-              whiteSpace: "nowrap",
-              padding: "0 16px",
-              boxSizing: "border-box",
-            }}
-          >
-            Море на карте Сочи — Яндекс Карты
-          </a>
         </div>
       </div>
 
       <div className="footer">
-        <div>
-          <img className="footer-img" src="/img/logo.png" alt="" />
-        </div>
+        <WaveAnimation />
+        <img className="footer-img" src="/img/logo.png" alt="" />
       </div>
     </div>
   );

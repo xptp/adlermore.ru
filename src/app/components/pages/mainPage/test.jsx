@@ -1,12 +1,21 @@
 import React from "react";
 
 const WaveAnimation = () => {
+  // const a = window.innerWidth;
+  // console.log(a);
+  // const b = `${a}px`;
+  const a = window.innerHeight;
+  console.log(a);
+  const b = `${a}px`;
   return (
     <svg
+      // width={b}
       width="100%"
-      height="100%"
+      // height="400px"
+      height={b}
       id="svg"
       viewBox="0 0 1440 490"
+      reserveAspectRatio="none"
       xmlns="http://www.w3.org/2000/svg"
       className="transition duration-300 ease-in-out delay-150 TEST"
     >

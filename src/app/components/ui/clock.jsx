@@ -23,22 +23,22 @@ const UsefulInfo = () => {
 
   return (
     <iframe
-      width="285"
-      height="220"
+      width="294"
+      height="252"
       style={{
-        padding: "0!important",
-        margin: "0!important",
-        border: "none!important",
-        background: "none!important",
-        background: "transparent!important",
+        padding: "0 !important",
+        margin: "0 !important",
+        border: "none !important",
+        background: "none !important",
+        backgroundColor: "transparent !important",
       }}
       marginHeight="0"
       marginWidth="0"
       frameBorder="0"
       scrolling="no"
-      comment="/*defined*/"
-      src="https://dayspedia.com/if/digit/?v=1&iframe=eyJ3LTEyIjpmYWxzZSwidy0xMSI6dHJ1ZSwidy0xMyI6dHJ1ZSwidy0xNCI6ZmFsc2UsInctMTUiOmZhbHNlLCJ3LTExMCI6ZmFsc2UsInctd2lkdGgtMCI6dHJ1ZSwidy13aWR0aC0xIjpmYWxzZSwidy13aWR0aC0yIjpmYWxzZSwidy0xNiI6IjI0cHgiLCJ3LTE5IjoiNDgiLCJ3LTE3IjoiMTYiLCJ3LTIxIjp0cnVlLCJiZ2ltYWdlIjoxMCwiYmdpbWFnZVNldCI6dHJ1ZSwidy0yMWMwIjoiI2ZmZmZmZmYiLCJ3LTEiOiIjMzQzNDM0Iiwidy0zIjp0cnVlLCJ3LTNjMCI6IiMzNDM0MzQiLCJ3LTNiMCI6IjEiLCJ3LTYiOiIjMzQzNDM0Iiwidy0yMCI6dHJ1ZSwidy00IjoiIzAwN2RiZiIsInctMTgiOmZhbHNlLCJ3LXdpZHRoLTJjLTAiOiIzMDAiLCJ3LTExNSI6ZmFsc2V9&lang=ru&cityid=28657"
-      title="Dayspedia Widget"
+      comment="/defined/"
+      src="https://dayspedia.com/if/digit/?v=1&iframe=eyJ3LTEyIjpmYWxzZSwidy0xMSI6ZmFsc2UsInctMTMiOmZhbHNlLCJ3LTE0IjpmYWxzZSwidy0xNSI6dHJ1ZSwidy0xMTAiOnRydWUsInctd2lkdGgtMCI6ZmFsc2UsInctd2lkdGgtMSI6ZmFsc2UsInctd2lkdGgtMiI6dHJ1ZSwidy0xNiI6IjQ4cHgiLCJ3LTE5IjoiMzIiLCJ3LTE3IjoiMTYiLCJ3LTIxIjp0cnVlLCJiZ2ltYWdlIjo3LCJiZ2ltYWdlU2V0Ijp0cnVlLCJ3LTIxYzAiOiIjNDRiY2M2Iiwidy0wIjpmYWxzZSwidy0zIjpmYWxzZSwidy0zYzAiOiIjMzQzNDM0Iiwidy0zYjAiOiIxIiwidy02IjoiIzA2OTJlMiIsInctMjAiOnRydWUsInctNCI6IiMwMDAwMDAiLCJ3LTE4Ijp0cnVlLCJ3LXdpZHRoLTJjLTAiOiIyMDAiLCJ3LTExNSI6ZmFsc2V9&lang=ru&cityid=28657"
+      title="Digital Clock"
     />
   );
 };

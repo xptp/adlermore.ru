@@ -8,15 +8,25 @@
   margin: 0 auto;
   color: $main-text;
 }
+.h2-color-white {
+  font-size: 46px;
+  text-align: left;
+  margin-bottom: 20px;
+  max-width: $width-content;
+  margin: 0 auto;
+  color: white;
+}
 
 .map-contacts {
+  background-color: $main-color;
   max-width: $width-max;
   margin: 0 auto;
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 25px;
-  margin-bottom: 100px;
+  padding: 25px 0 100px 0;
+  z-index: 5;
+  // margin-bottom: 100px;
 
   .contacts {
     text-align: left;

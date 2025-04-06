@@ -1,0 +1,83 @@
+@import "../variables.scss";
+@keyframes fish-swim {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(3deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+}
+
+@keyframes fish-movement {
+  0% {
+    left: -50px;
+    top: 30%;
+  }
+  25% {
+    top: 25%;
+  }
+  50% {
+    top: 35%;
+  }
+  75% {
+    top: 28%;
+  }
+  100% {
+    left: 100%;
+    top: 32%;
+  }
+}
+
+/* Применяем анимации к рыбке */
+.fish {
+  // background-color: $main-color;
+  animation: fish-movement 15s linear infinite,
+    fish-swim 4s ease-in-out infinite;
+  animation-delay: 0s, 0.5s; /* Небольшая задержка для разнообразия */
+}
+
+/* Добавляем пузырьки для большего эффекта */
+@keyframes bubble-float {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: bubble-float 2s ease-out infinite;
+}
+
+/* Создаем несколько пузырьков с разными параметрами */
+.bubble:nth-child(1) {
+  width: 5px;
+  height: 5px;
+  left: 20%;
+  animation-delay: 0s;
+}
+.bubble:nth-child(2) {
+  width: 8px;
+  height: 8px;
+  left: 35%;
+  animation-delay: 1s;
+}
+.bubble:nth-child(3) {
+  width: 6px;
+  height: 6px;
+  left: 50%;
+  animation-delay: 0.5s;
+}
