@@ -22,7 +22,7 @@ const InfoHotel = () => {
         <br />
         {/* <a href="tel:">+7 (918) 915 92 26 (What’s App)</a> */}
         <h3>E-mail</h3>
-        <a href="mailto:">test@mail.ru</a>
+        <a href="mailto:A330mos@mail.ru">A330mos@mail.ru</a>
         <div className="mini-reviews">
           <iframe
             src="https://yandex.ru/sprav/widget/rating-badge/1126085566"

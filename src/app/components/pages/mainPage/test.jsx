@@ -1,21 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const WaveAnimation = () => {
-  // const a = window.innerWidth;
-  // console.log(a);
-  // const b = `${a}px`;
-  const a = window.innerHeight;
-  console.log(a);
-  const b = `${a}px`;
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Очистка эффекта
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); // Пустой массив зависимостей означает, что эффект выполнится только при монтировании и размонтировании
+
+  const height = `${windowSize.height}px`;
+
   return (
     <svg
-      // width={b}
       width="100%"
-      // height="400px"
-      height={b}
+      height={height}
       id="svg"
       viewBox="0 0 1440 490"
-      reserveAspectRatio="none"
+      preserveAspectRatio="none"
       xmlns="http://www.w3.org/2000/svg"
       className="transition duration-300 ease-in-out delay-150 TEST"
     >
