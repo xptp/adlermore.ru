@@ -37,7 +37,7 @@ const InfoHotel = () => {
           Ранний заезд
         </button>
         <button className="modal-btn" onClick={openModalCheckOut}>
-          Ранний выезд
+          Поздний выезд
         </button>
         <button className="modal-btn" onClick={openModalAdd}>
           Платные услуги

@@ -1,45 +1,58 @@
 import { useEffect } from "react";
-import ".././../styles/ui/hotelBookingWidget.scss";
+import "../../styles/ui/hotelWidget.scss";
 
-const HotelBookingWidget = () => {
+const initializeHotelWidget = () => {
+  if (!window.HotelWidget) return;
+
+  window.HotelWidget.init({
+    hotelId: "4394f0c6-a98b-4547-82c0-dc4af910313f",
+    version: "2",
+    baseUrl: "https://bookonline24.ru/",
+    hooks: {
+      onError: (e) => console.error("onError", e),
+      onInit: () => console.log("Widget initialized"),
+      onBooking: (v) => console.log("Booking completed", v),
+    },
+  });
+
+  window.HotelWidget.add({
+    type: "bookingForm",
+    inline: true,
+    appearance: {
+      container: "booking-widget-container",
+    },
+  });
+};
+
+const HotelWidget = () => {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const script = document.createElement("script");
-      script.src = "https://bookonline24.ru/widget.js";
-      script.async = true;
-      script.onload = initializeWidget;
-
-      document.body.appendChild(script);
-
-      return () => {
-        document.body.removeChild(script);
-      };
-    }
-  }, []);
-
-  const initializeWidget = () => {
+    // Проверяем, не загружен ли уже виджет
     if (window.HotelWidget) {
-      window.HotelWidget.init({
-        hotelId: "4394f0c6-a98b-4547-82c0-dc4af910313f",
-        version: "2",
-        baseUrl: "https://bookonline24.ru/",
-        hooks: {
-          onError: (e) => console.error("Ошибка виджета:", e),
-          onInit: () => console.log("Виджет загружен!"),
-          onBooking: (v) => console.log("Бронирование:", v),
-        },
-      });
-
-      // Форма бронирования (горизонтальная)
-      window.HotelWidget.add({
-        type: "bookingForm",
-        inline: true, // Горизонтальный layout
-        appearance: {
-          container: "booking-widget-container",
-        },
-      });
+      initializeHotelWidget();
+      return;
     }
-  };
+
+    const script = document.createElement("script");
+    script.src = "https://bookonline24.ru/widget.js";
+    script.async = true;
+
+    script.onload = () => {
+      initializeHotelWidget();
+    };
+
+    document.body.appendChild(script);
+
+    return () => {
+      // Очистка при размонтировании компонента
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+      // Дополнительная очистка виджета, если нужно
+      if (window.HotelWidget && window.HotelWidget.destroy) {
+        window.HotelWidget.destroy();
+      }
+    };
+  }, []);
 
   return (
     <div className="widget-container">
@@ -48,4 +61,4 @@ const HotelBookingWidget = () => {
   );
 };
 
-export default HotelBookingWidget;
+export default HotelWidget;

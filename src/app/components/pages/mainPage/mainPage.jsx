@@ -9,11 +9,8 @@ import rooms from "../../../data/rooms.json";
 import NavBarScroll from "../../ui/navBarScroll";
 import InfoHotel from "../../ui/infoHotel";
 import Gallery from "../../ui/gallery";
-import FancyWave from "./test";
 import WaveAnimation from "./test";
 import FishAnimation from "../../ui/fish";
-// import { ReactComponent as Wave } from "./test";
-// import FancyWave, { ReactComponent as Wave } from "./test";
 
 const MainPage = () => {
   const [showStickyNav, setShowStickyNav] = useState(false);
@@ -92,66 +89,9 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      {/* <div className="ttttt"></div> */}
       <div id="rooms-section">
         <Carousel items={rooms} />
       </div>
-
-      {/* <div className="services-block">
-        <h2></h2>
-        <div className="services-background-block">
-          <div className="services-white-block">
-            <h3>В номерах:</h3>
-            <p>Современное оснащение</p>
-            <p>Кабельное телевидение</p>
-            <p>Высокоскоростной интернет</p>
-            <p>Электронный мини-сейф</p>
-            <p>
-              Собственная ванная комната с комплектом <br /> душевых
-              принадлежностей
-            </p>
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div className="advantages-block">
-        <h2>Наши преимущества</h2>
-        <div className="advantages-box">
-          <div className="advantages-div">
-            <img src="https://hotel-blacksea.com/img/icons/map.png" alt="" />
-            <p>Удобное расположение: 5 мин. от моря</p>
-          </div>
-          <div className="advantages-div">
-            <img src="https://hotel-blacksea.com/img/icons/pool.png" alt="" />
-            <p>Теплый бассейн на крыше с морской водой и видом на море</p>
-          </div>
-          <div className="advantages-div">
-            <img src="https://hotel-blacksea.com/img/icons/glass.png" alt="" />
-            <p>Бар около бассейна. Терраса для загара</p>
-          </div>
-          <div className="advantages-div">
-            <img
-              src="https://hotel-blacksea.com/img/icons/network.png"
-              alt=""
-            />
-            <p>Бесплатный Wi-Fi</p>
-          </div>
-          <div className="advantages-div">
-            <img
-              src="https://hotel-blacksea.com/img/icons/suitcase.png"
-              alt=""
-            />
-            <p>Камера хранения багажа</p>
-          </div>
-          <div className="advantages-div">
-            <img
-              src="https://hotel-blacksea.com/img/icons/parking.png"
-              alt=""
-            />
-            <p>Охраняемая парковка на месте</p>
-          </div>
-        </div>
-      </div> */}
 
       <Gallery />
 
