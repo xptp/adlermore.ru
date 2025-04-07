@@ -30,7 +30,7 @@ const NavBar = () => {
           </div>
         </div>
         <div className="div_nav-callback">
-          <button className="nav-callback-btn">Заказать обратный звонок</button>
+          {/* <button className="nav-callback-btn">Заказать обратный звонок</button> */}
           <div className="tel-what">
             <a href="" className="telegram">
               <FaTelegram />
@@ -74,16 +74,7 @@ const NavBar = () => {
           >
             Номера
           </li>
-          <li
-            className="header_nav-item"
-            // onClick={() =>
-            //   document
-            //     .getElementById("rooms-section")
-            //     .scrollIntoView({ behavior: "smooth" })
-            // }
-          >
-            Забронировать
-          </li>
+
           <li
             className="header_nav-item"
             // onClick={() =>
