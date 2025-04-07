@@ -8,6 +8,15 @@
   color: $main-text;
 }
 
+.contacts-h2 {
+  font-size: 46px;
+  text-align: left;
+  margin-bottom: 20px;
+  max-width: $width-content;
+  margin: 0 auto;
+  color: $main-text;
+}
+
 .up-btn {
   position: fixed;
   right: 50px;
@@ -43,21 +52,17 @@
     }
   }
 
-  /* Стили для отображения */
-  display: block !important; /* Переопределяем inline-стили */
+  display: block !important;
   opacity: 1;
   transform: scale(1);
 }
 
 .img-block {
   max-width: $width-max;
-  // max-width: $width-content;
-  // max-width: 1500px;
+
   margin: 0 auto;
   height: 900px;
-  // background-image: url(https://hotel-blacksea.com/img/galleryfull39.jpg);
   background-image: url(https://avatars.mds.yandex.net/i?id=c66d383a2842aa3f5ec532a91c5fecbe_l-5230359-images-thumbs&ref=rim&n=13&w=1280&h=720);
-  // background-image: url("../../../../public/img/test.jpg");
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
@@ -67,9 +72,6 @@
   .img-block-content {
     margin: 0 auto;
     max-width: $width-content;
-    // width: $width-content;
-    // height: 300px;
-    // background-color: black;
   }
 
   .img_text {

@@ -102,7 +102,7 @@ const MainPage = () => {
         <InfoHotel />
       </div>
 
-      <h2 className="h2-color-white">Как нас найти</h2>
+      <h2 className="contacts-h2">Как нас найти</h2>
 
       <div className="map-contacts" id="contacts-section">
         <MapLocation />
