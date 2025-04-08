@@ -35,7 +35,10 @@ const NavBar = () => {
             <a href="" className="telegram">
               <FaTelegram />
             </a>
-            <a href="" className="whatsapp">
+            <a
+              href="https://api.whatsapp.com/send?phone=79189579280"
+              className="whatsapp"
+            >
               <FaWhatsapp />
             </a>
           </div>
