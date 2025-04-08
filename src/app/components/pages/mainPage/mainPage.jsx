@@ -9,7 +9,7 @@ import rooms from "../../../data/rooms.json";
 import NavBarScroll from "../../ui/navBarScroll";
 import InfoHotel from "../../ui/infoHotel";
 import Gallery from "../../ui/gallery";
-import WaveAnimation from "./test";
+import WaveAnimation from "./waveAnimation";
 import FishAnimation from "../../ui/fish";
 
 const MainPage = () => {
