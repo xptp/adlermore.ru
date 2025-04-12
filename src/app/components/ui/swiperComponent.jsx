@@ -6,7 +6,7 @@ import { Navigation } from "swiper/modules";
 import "../../styles/ui/swiperComponent.scss";
 
 const SwiperComponent = ({ objImages, clName }) => {
-  console.log(objImages);
+  // console.log(objImages);
 
   return (
     <div className={clName}>
