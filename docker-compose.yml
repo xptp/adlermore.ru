@@ -7,4 +7,5 @@ services:
       - "443:443"
     volumes:
       - /etc/letsencrypt/archive/adlermore.ru:/etc/nginx/ssl
-      - /etc/letsencrypt/live/adlermore.ru:/etc/nginx/ssl-links
+      - /etc/letsencrypt/live/adlermore.ru:/etc/nginx/ssl-links:ro
+    restart: unless-stopped
