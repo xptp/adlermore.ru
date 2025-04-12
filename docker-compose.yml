@@ -1,5 +1,4 @@
-version: "3.8"
-
+version: "3"
 services:
   app:
     build: .
@@ -8,11 +7,4 @@ services:
       - "443:443"
     volumes:
       - /etc/letsencrypt/archive/adlermore.ru:/etc/nginx/ssl
-      - /etc/letsencrypt/live/adlermore.ru:/etc/nginx/ssl-links:ro
-    restart: unless-stopped
-    networks:
-      - webnet
-
-networks:
-  webnet:
-    driver: bridge
+      - /etc/letsencrypt/live/adlermore.ru:/etc/nginx/ssl-links
