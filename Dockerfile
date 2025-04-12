@@ -9,6 +9,9 @@ RUN npm run build
 # Шаг 2: Финальный образ с Nginx и SSL
 FROM nginx:stable-alpine
 
+
+# Устанавливаем openssl
+RUN apk update && apk add openssl && rm -rf /var/cache/apk/*
 # Копируем собранное React-приложение
 COPY --from=build /app/build /usr/share/nginx/html
 
