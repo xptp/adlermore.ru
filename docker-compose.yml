@@ -6,5 +6,5 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/ssl:/etc/nginx/conf.d/ssl
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - /etc/letsencrypt/archive/adlermore.ru:/etc/nginx/ssl
+      - /etc/letsencrypt/live/adlermore.ru:/etc/nginx/ssl-links
