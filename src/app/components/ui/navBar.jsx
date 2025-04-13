@@ -34,9 +34,9 @@ const NavBar = () => {
         <div className="div_nav-callback">
           {/* <button className="nav-callback-btn">Заказать обратный звонок</button> */}
           <div className="tel-what">
-            <a href="" className="telegram">
+            {/* <a href="" className="telegram">
               <FaTelegram />
-            </a>
+            </a> */}
             <a
               href="https://api.whatsapp.com/send?phone=79189579280"
               className="whatsapp"
@@ -82,11 +82,6 @@ const NavBar = () => {
 
           <li
             className="header_nav-item"
-            // onClick={() =>
-            //   document
-            //     .getElementById("gallery-section")
-            //     .scrollIntoView({ behavior: "smooth" })
-            // }
             onClick={() => {
               const element = document.getElementById("gallery-section");
               const yOffset =

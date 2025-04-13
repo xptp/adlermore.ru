@@ -7,44 +7,6 @@
   position: relative;
   z-index: 100;
 
-  // .header {
-  //   background-color: $main-color;
-  //   color: white;
-
-  //   .header-content {
-  //     display: flex;
-  //     margin: 0 auto;
-  //     height: 50px;
-  //     font-size: 16px;
-  //     justify-content: space-between;
-  //     align-items: center;
-  //     width: $width-content;
-  //     padding: 0 20px;
-
-  //     .message-btn {
-  //       font-size: 16px;
-  //       padding: 8px 16px;
-  //       border-radius: 25px;
-  //       border: 1px solid white;
-  //       background-color: transparent;
-  //       color: white;
-  //       cursor: pointer;
-  //       transition: all 0.3s ease;
-
-  //       &:hover {
-  //         background-color: white;
-  //         color: $main-color;
-  //         transform: translateY(-2px);
-  //         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  //       }
-  //     }
-
-  //     .header_text {
-  //       font-weight: 500;
-  //     }
-  //   }
-  // }
-
   .header_nav-ad-address {
     display: flex;
     padding: 20px 0;
@@ -103,9 +65,7 @@
         }
       }
     }
-    // .div_nav-callback {
-    //   background-color: aqua;
-    // }
+
     .nav-callback-btn {
       background-color: $main-color;
       color: white;
@@ -177,44 +137,6 @@
           height: 2px;
           background-color: $main-color;
           transition: width 0.3s ease;
-        }
-      }
-    }
-  }
-}
-
-// Адаптивные стили
-@media (max-width: 1024px) {
-  .header-nav {
-    .header_nav-ad-address {
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-
-      .nav-address {
-        flex-direction: column;
-        text-align: center;
-
-        .div-address {
-          h2,
-          p,
-          .contact-links {
-            text-align: center;
-            margin-left: 0;
-            padding-left: 0;
-          }
-        }
-      }
-    }
-
-    .nav-bar {
-      .header_nav-list {
-        flex-wrap: wrap;
-        gap: 5px;
-
-        .header_nav-item {
-          padding: 10px 15px;
-          font-size: 16px;
         }
       }
     }

@@ -337,22 +337,3 @@
     // padding-top: 4px;
   }
 }
-
-// Адаптивные стили
-@media (max-width: 900px) {
-  .modal-main-content {
-    flex-direction: column;
-  }
-
-  .modal-image-section {
-    .modal-room-images-swiper {
-      height: 300px;
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  .modal-features-container {
-    grid-template-columns: 1fr;
-  }
-}
