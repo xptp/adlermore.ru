@@ -170,12 +170,12 @@ const HotelWidget = () => {
   return (
     <div>
       {/* Добавьте контейнеры для виджетов с соответствующими ID */}
-      <div id="WidgetVerticalBlockId"></div>
+      {/* <div id="WidgetVerticalBlockId"></div> */}
       <div id="WidgetHorizontalBlockId"></div>
-      <div id="WidgetRoomsListId"></div>
+      {/* <div id="WidgetRoomsListId"></div>
       <div id="WidgetVerticalAvailabilityCalendarId"></div>
       <div id="WidgetHorizontalAvailabilityCalendarId"></div>
-      <div id="WidgetShowCheckAvailabilityButtonForMobileDevicesId"></div>
+      <div id="WidgetShowCheckAvailabilityButtonForMobileDevicesId"></div> */}
     </div>
   );
 };
