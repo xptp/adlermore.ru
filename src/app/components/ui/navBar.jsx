@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/ui/navBar.scss";
-import { FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 const NavBar = () => {
   return (
     <div className="header-nav">
@@ -47,7 +47,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <nav className="nav-bar">
+      <nav className="nav-bar" id="nav-bar">
         <ul className="header_nav-list">
           <li
             className="header_nav-item"

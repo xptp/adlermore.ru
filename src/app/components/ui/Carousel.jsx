@@ -61,7 +61,14 @@ const Carousel = ({ items }) => {
                   Подробнее
                 </button>
                 <div className="carousel-btn-containter">
-                  <button className="carousel-btn-book">
+                  <button
+                    className="carousel-btn-book"
+                    onClick={() =>
+                      document
+                        .getElementById("nav-bar")
+                        .scrollIntoView({ behavior: "smooth" })
+                    }
+                  >
                     <div className="arrow-btn">
                       <HiArrowLongRight />
                     </div>
