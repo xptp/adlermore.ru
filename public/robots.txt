@@ -1,0 +1,4 @@
+User-agent: *  
+Allow: /  
+Sitemap: https://adlermore.ru/sitemap.xml  
+Host: adlermore.ru  
