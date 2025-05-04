@@ -50,7 +50,10 @@ const InfoHotel = () => {
       {isModalOpen ? (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src="img/certificate.png" alt="Modal" />
+            <img
+              src="img/certificate.png"
+              alt="Сетрификт отеля или гостиницы"
+            />
             <button onClick={closeModal}>
               <IoMdClose />
             </button>

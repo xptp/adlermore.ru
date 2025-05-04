@@ -60,6 +60,7 @@ const MapLocation = () => {
             height="500"
             frameBorder="1"
             allowFullScreen
+            loading="lazy"
             style={{ position: "relative" }}
             title="Yandex Map"
           ></iframe>

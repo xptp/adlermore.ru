@@ -16,7 +16,7 @@ const NavBar = () => {
       <div className="header_nav-ad-address">
         <div className="nav-address">
           <div className="div-logo">
-            <img className="logo" src="/img/logo.png" alt="Adlermore Logo" />
+            <img className="logo" src="/img/logo.png" alt='Отель "Море"' />
           </div>
           <div className="div-address">
             <h1>Отдых в Адлере в отеле «Море»</h1>
