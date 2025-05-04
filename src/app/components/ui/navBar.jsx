@@ -19,7 +19,7 @@ const NavBar = () => {
             <img className="logo" src="/img/logo.png" alt="Adlermore Logo" />
           </div>
           <div className="div-address">
-            <h1>Отдых в Адлере в отеле Море </h1>
+            <h1>Отдых в Адлере в отеле «Море»</h1>
             <p>
               Краснодарский край, Сочи, жилой район Адлер, переулок Чкалова, 9А
             </p>
