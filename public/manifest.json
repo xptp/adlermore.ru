@@ -1,0 +1,16 @@
+{
+  "name": "Adlermore Hotel",
+  "short_name": "Adlermore",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0693e3",
+  "description": "Море — комфортный отель в Адлере у самого моря. Номера с видом, бассейн, бесплатный Wi-Fi, трансфер, парковка и вкусные завтраки включены.",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "350x300"
+    }
+  ]
+}
