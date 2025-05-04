@@ -13,22 +13,22 @@
       { "id": 5, "image": "/img/doubleStandard/6.webp" },
       { "id": 6, "image": "/img/doubleStandard/7.webp" },
       { "id": 7, "image": "/img/doubleStandard/8.webp" },
-      { "id": 8, "image": "/img/doubleStandard/9.jpg" },
-      { "id": 9, "image": "/img/doubleStandard/10.jpg" },
-      { "id": 10, "image": "/img/doubleStandard/11.jpg" },
-      { "id": 11, "image": "/img/doubleStandard/12.jpg" },
-      { "id": 12, "image": "/img/doubleStandard/13.jpg" },
-      { "id": 13, "image": "/img/doubleStandard/14.jpg" },
-      { "id": 1, "image": "/img/doubleStandard/1.jpg" },
-      { "id": 14, "image": "/img/doubleStandard/15.jpg" },
-      { "id": 15, "image": "/img/doubleStandard/16.jpg" },
-      { "id": 16, "image": "/img/doubleStandard/17.jpg" },
-      { "id": 17, "image": "/img/doubleStandard/18.jpg" },
-      { "id": 18, "image": "/img/doubleStandard/19.jpg" },
-      { "id": 19, "image": "/img/doubleStandard/20.jpg" },
-      { "id": 20, "image": "/img/doubleStandard/21.jpg" },
-      { "id": 21, "image": "/img/doubleStandard/22.jpg" },
-      { "id": 22, "image": "/img/doubleStandard/23.jpg" }
+      { "id": 8, "image": "/img/doubleStandard/9.webp" },
+      { "id": 9, "image": "/img/doubleStandard/10.webp" },
+      { "id": 10, "image": "/img/doubleStandard/11.webp" },
+      { "id": 11, "image": "/img/doubleStandard/12.webp" },
+      { "id": 12, "image": "/img/doubleStandard/13.webp" },
+      { "id": 13, "image": "/img/doubleStandard/14.webp" },
+      { "id": 1, "image": "/img/doubleStandard/1.webp" },
+      { "id": 14, "image": "/img/doubleStandard/15.webp" },
+      { "id": 15, "image": "/img/doubleStandard/16.webp" },
+      { "id": 16, "image": "/img/doubleStandard/17.webp" },
+      { "id": 17, "image": "/img/doubleStandard/18.webp" },
+      { "id": 18, "image": "/img/doubleStandard/19.webp" },
+      { "id": 19, "image": "/img/doubleStandard/20.webp" },
+      { "id": 20, "image": "/img/doubleStandard/21.webp" },
+      { "id": 21, "image": "/img/doubleStandard/22.webp" },
+      { "id": 22, "image": "/img/doubleStandard/23.webp" }
     ],
     "other": [
       {
@@ -86,7 +86,7 @@
       { "id": 8, "image": "/img/doubleStandardWithDop/8.webp" },
       { "id": 9, "image": "/img/doubleStandardWithDop/9.webp" },
       { "id": 10, "image": "/img/doubleStandardWithDop/10.webp" },
-      { "id": 11, "image": "/img/doubleStandardWithDop/11.jpg" }
+      { "id": 11, "image": "/img/doubleStandardWithDop/11.webp" }
     ],
     "other": [
       {
@@ -144,7 +144,7 @@
       { "id": 8, "image": "/img/doubleStandardWithDop/8.webp" },
       { "id": 9, "image": "/img/doubleStandardWithDop/9.webp" },
       { "id": 10, "image": "/img/doubleStandardWithDop/10.webp" },
-      { "id": 11, "image": "/img/doubleStandardWithDop/11.jpg" }
+      { "id": 11, "image": "/img/doubleStandardWithDop/11.webp" }
     ],
     "other": [
       {
@@ -193,26 +193,25 @@
     "size": 20,
     "img": [
       { "id": 0, "image": "/img/tripleStandard/1.webp" },
-      { "id": 2, "image": "/img/tripleStandard/2.jpg" },
       { "id": 3, "image": "/img/tripleStandard/2.webp" },
       { "id": 4, "image": "/img/tripleStandard/3.webp" },
-      { "id": 5, "image": "/img/tripleStandard/4.jpg" },
+      { "id": 5, "image": "/img/tripleStandard/4.webp" },
       { "id": 6, "image": "/img/tripleStandard/4.webp" },
-      { "id": 7, "image": "/img/tripleStandard/5.jpg" },
+      { "id": 7, "image": "/img/tripleStandard/5.webp" },
       { "id": 8, "image": "/img/tripleStandard/6.webp" },
-      { "id": 9, "image": "/img/tripleStandard/7.jpg" },
+      { "id": 9, "image": "/img/tripleStandard/71.webp" },
       { "id": 10, "image": "/img/tripleStandard/7.webp" },
-      { "id": 11, "image": "/img/tripleStandard/8.jpg" },
-      { "id": 12, "image": "/img/tripleStandard/9.jpg" },
-      { "id": 13, "image": "/img/tripleStandard/10.jpg" },
+      { "id": 11, "image": "/img/tripleStandard/8.webp" },
+      { "id": 12, "image": "/img/tripleStandard/9.webp" },
+      { "id": 13, "image": "/img/tripleStandard/101.webp" },
       { "id": 14, "image": "/img/tripleStandard/10.webp" },
-      { "id": 15, "image": "/img/tripleStandard/11.jpg" },
-      { "id": 16, "image": "/img/tripleStandard/12.jpg" },
+      { "id": 15, "image": "/img/tripleStandard/111.webp" },
+      { "id": 16, "image": "/img/tripleStandard/121.webp" },
       { "id": 17, "image": "/img/tripleStandard/12.webp" },
       { "id": 18, "image": "/img/tripleStandard/13.webp" },
-      { "id": 19, "image": "/img/tripleStandard/14.jpg" },
+      { "id": 19, "image": "/img/tripleStandard/14.webp" },
       { "id": 20, "image": "/img/tripleStandard/15.webp" },
-      { "id": 20, "image": "/img/tripleStandard/222.jpg" }
+      { "id": 20, "image": "/img/tripleStandard/222.webp" }
     ],
     "other": [
       {
@@ -260,10 +259,10 @@
     "shortDescription": "Уютный классический номер на троих с широкой кроватью и дополнительным спальным местом (новые ортопедические матрасы). В номере есть всё для комфорта: телевизор, холодильник, кондиционер, электрочайник, санузел и балкон с видом на бассейн или улицу. Идеальное место для отдыха!",
     "size": 25,
     "img": [
-      { "id": 0, "image": "/img/tripleСomfort/2.jpg" },
-      { "id": 2, "image": "/img/tripleСomfort/3.jpg" },
-      { "id": 3, "image": "/img/tripleСomfort/4.jpg" },
-      { "id": 4, "image": "/img/tripleСomfort/5.jpg" },
+      { "id": 0, "image": "/img/tripleСomfort/2.webp" },
+      { "id": 2, "image": "/img/tripleСomfort/3.webp" },
+      { "id": 3, "image": "/img/tripleСomfort/4.webp" },
+      { "id": 4, "image": "/img/tripleСomfort/5.webp" },
       { "id": 5, "image": "/img/tripleСomfort/6.webp" },
       { "id": 6, "image": "/img/tripleСomfort/7.webp" },
       { "id": 7, "image": "/img/tripleСomfort/8.webp" },
@@ -273,13 +272,13 @@
       { "id": 11, "image": "/img/tripleСomfort/12.webp" },
       { "id": 12, "image": "/img/tripleСomfort/13.webp" },
       { "id": 13, "image": "/img/tripleСomfort/14.webp" },
-      { "id": 14, "image": "/img/tripleСomfort/15.jpg" },
-      { "id": 15, "image": "/img/tripleСomfort/16.jpg" },
-      { "id": 16, "image": "/img/tripleСomfort/17.jpg" },
+      { "id": 14, "image": "/img/tripleСomfort/15.webp" },
+      { "id": 15, "image": "/img/tripleСomfort/16.webp" },
+      { "id": 16, "image": "/img/tripleСomfort/17.webp" },
       { "id": 17, "image": "/img/tripleСomfort/18.webp" },
       { "id": 18, "image": "/img/tripleСomfort/19.webp" },
-      { "id": 19, "image": "/img/tripleСomfort/20.jpg" },
-      { "id": 20, "image": "/img/tripleСomfort/21.jpg" }
+      { "id": 19, "image": "/img/tripleСomfort/20.webp" },
+      { "id": 20, "image": "/img/tripleСomfort/21.webp" }
     ],
     "other": [
       {
