@@ -76,6 +76,7 @@ const MainPage = () => {
                   width="513"
                   height="600"
                   frameborder="0"
+                  loading="lazy"
                 ></iframe>
               </div>
             </div>
