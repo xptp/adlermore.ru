@@ -11,9 +11,12 @@ import InfoHotel from "../../ui/infoHotel";
 import Gallery from "../../ui/gallery";
 import WaveAnimation from "./waveAnimation";
 import FishAnimation from "../../ui/fish";
+import { useWindowWidth } from "../../hooks/useWindowWidth";
 
 const MainPage = () => {
   const [showStickyNav, setShowStickyNav] = useState(false);
+  const width = useWindowWidth();
+  let scrinWidth = width < 400 ? true : false;
 
   const triggerBlockRef = useRef();
 
@@ -105,11 +108,12 @@ const MainPage = () => {
 
       <h2 className="contacts-h2">Как нас найти</h2>
 
-      {/* <div className="map-contacts" id="contacts-section">
+      <div className="map-contacts" id="contacts-section">
         <MapLocation />
       </div>
 
-      <div className="reviews">
+      {/* <div className="reviews">
+        {!scrinWidth ? <FishAnimation /> : null}
         <FishAnimation />
         <div
           style={{

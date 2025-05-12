@@ -1,50 +1,57 @@
 import React from "react";
 import "../../styles/navBars/navBarMobile.scss";
 
-const NavBarMobile = (isOpen) => {
+const NavBarMobile = ({ isOpen, closeNav }) => {
   console.log(isOpen);
 
   return (
     <div className={`header-nav-mobile ${isOpen ? "open" : null}`}>
+      <button className="closeNav" onClick={() => closeNav()}>
+        X
+      </button>
       <nav className="nav-bar-mobile">
         <ul className="header_nav-list-mobile">
           <li
             className="header_nav-item-mobile"
-            onClick={() =>
+            onClick={() => {
               document
                 .getElementById("hotel-section")
-                .scrollIntoView({ behavior: "smooth" })
-            }
+                .scrollIntoView({ behavior: "smooth" });
+              closeNav();
+            }}
           >
             Отель
           </li>
           <li
             className="header_nav-item-mobile"
-            onClick={() =>
+            onClick={() => {
               document
                 .getElementById("info-section")
-                .scrollIntoView({ behavior: "smooth" })
-            }
+                .scrollIntoView({ behavior: "smooth" });
+              closeNav();
+            }}
           >
             Информация
           </li>
           <li
             className="header_nav-item-mobile"
-            onClick={() =>
+            onClick={() => {
               document
                 .getElementById("rooms-section")
-                .scrollIntoView({ behavior: "smooth" })
-            }
+                .scrollIntoView({ behavior: "smooth" });
+              closeNav();
+            }}
           >
             Номера
           </li>
           <li
             className="header_nav-item-mobile"
-            onClick={() =>
+            onClick={() => {
               document
                 .getElementById("up")
-                .scrollIntoView({ behavior: "smooth" })
-            }
+                .scrollIntoView({ behavior: "smooth" });
+              closeNav();
+            }}
           >
             Забронировать
           </li>
@@ -60,6 +67,7 @@ const NavBarMobile = (isOpen) => {
               const yOffset =
                 element.getBoundingClientRect().top + window.pageYOffset - 50;
               window.scrollTo({ top: yOffset, behavior: "smooth" });
+              closeNav();
             }}
           >
             Галерея

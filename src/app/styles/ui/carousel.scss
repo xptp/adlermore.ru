@@ -188,7 +188,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: $mobile) {
   .carousel-container {
     width: 100%;
   }

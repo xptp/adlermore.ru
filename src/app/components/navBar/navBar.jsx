@@ -12,6 +12,7 @@ const NavBar = () => {
   //   console.log(isNavOpen);
   //   console.log(width);
   // }, [isNavOpen, width]);
+
   return (
     <div className="header-nav">
       <div className="header_nav-ad-address">
@@ -49,13 +50,15 @@ const NavBar = () => {
       </div>
 
       {width < 401 ? (
-        <IoIosMenu
-          className="navIco"
-          onClick={() => {
-            setIsNavOpen(!isNavOpen);
-          }}
-          type="button"
-        />
+        !isNavOpen ? (
+          <IoIosMenu
+            className="navIco"
+            onClick={() => {
+              setIsNavOpen(!isNavOpen);
+            }}
+            type="button"
+          />
+        ) : null
       ) : (
         <nav className="nav-bar" id="nav-bar">
           <ul className="header_nav-list">
@@ -104,7 +107,7 @@ const NavBar = () => {
           </ul>
         </nav>
       )}
-      <NavBarMobile isOpen={isNavOpen} />
+      <NavBarMobile isOpen={isNavOpen} closeNav={() => setIsNavOpen(false)} />
     </div>
   );
 };

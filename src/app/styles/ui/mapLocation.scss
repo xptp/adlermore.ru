@@ -126,3 +126,75 @@
     transform: translateY(0) scale(1);
   }
 }
+
+@media (max-width: $mobile) {
+  .map-contacts {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+
+    .contacts {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      margin: 0;
+      overflow-x: hidden;
+
+      .h3-a-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h3 {
+          margin-bottom: 10px;
+        }
+
+        a {
+          position: static;
+          margin: 10px 0 0 0;
+          font-size: 16px;
+          padding: 6px 16px;
+          display: inline-block;
+          align-self: flex-start;
+        }
+      }
+
+      .route-btn {
+        display: block;
+        margin: 10px auto 0 auto;
+        width: fit-content;
+      }
+
+      .weather-clock-block {
+        flex-direction: column;
+        align-items: flex-start;
+        position: static;
+        margin-top: 20px;
+
+        > * + * {
+          margin-left: 0;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  .map {
+    width: 100%;
+    overflow-x: hidden;
+
+    iframe {
+      width: 100% !important;
+      height: 300px !important;
+      max-width: 100%;
+      box-sizing: border-box;
+      display: block;
+    }
+
+    > div {
+      width: 100%;
+    }
+  }
+}
