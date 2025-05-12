@@ -112,31 +112,32 @@ const MainPage = () => {
         <MapLocation />
       </div>
 
-      {/* <div className="reviews">
-        {!scrinWidth ? <FishAnimation /> : null}
-        <FishAnimation />
-        <div
-          style={{
-            margin: "0 auto",
-            width: "560px",
-            height: "800px",
-            overflow: "hidden",
-            position: "relative",
-          }}
-        >
-          <iframe
+      {!scrinWidth ? (
+        <div className="reviews">
+          <FishAnimation />
+          <div
             style={{
-              width: "100%",
-              height: "90%",
-              border: "1px solid #e6e6e6",
-              borderRadius: "8px",
-              boxSizing: "border-box",
+              margin: "0 auto",
+              width: "560px",
+              height: "800px",
+              overflow: "hidden",
+              position: "relative",
             }}
-            src="https://yandex.ru/maps-reviews-widget/1126085566?comments&sort=rating_desc"
-            title="Yandex Map Widget"
-          ></iframe>
+          >
+            <iframe
+              style={{
+                width: "100%",
+                height: "90%",
+                border: "1px solid #e6e6e6",
+                borderRadius: "8px",
+                boxSizing: "border-box",
+              }}
+              src="https://yandex.ru/maps-reviews-widget/1126085566?comments&sort=rating_desc"
+              title="Yandex Map Widget"
+            ></iframe>
+          </div>
         </div>
-      </div> */}
+      ) : null}
 
       <div className="footer">
         <WaveAnimation />
