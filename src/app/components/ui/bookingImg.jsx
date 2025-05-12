@@ -1,6 +1,9 @@
 import React from "react";
 import HotelWidget from "./hotelBookingWidget";
+import "../../styles/ui/imgBlock.scss";
+// import { useWindowWidth } from "../hooks/useWindowWidth";
 const BookingImg = () => {
+  // const width = useWindowWidth();
   return (
     <div className="img-block">
       <div className="img-block-content">

@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import NavBar from "../../ui/navBar";
+import NavBar from "../../navBar/navBar";
 import "../../../styles/pages/mainPage.scss";
 import Carousel from "../../ui/Carousel";
 import { MdOutlineArrowCircleUp } from "react-icons/md";
 import BookingImg from "../../ui/bookingImg";
 import MapLocation from "./../../ui/mapLocation";
 import rooms from "../../../data/rooms.json";
-import NavBarScroll from "../../ui/navBarScroll";
+import NavBarScroll from "../../navBar/navBarScroll";
 import InfoHotel from "../../ui/infoHotel";
 import Gallery from "../../ui/gallery";
 import WaveAnimation from "./waveAnimation";
@@ -14,6 +14,7 @@ import FishAnimation from "../../ui/fish";
 
 const MainPage = () => {
   const [showStickyNav, setShowStickyNav] = useState(false);
+
   const triggerBlockRef = useRef();
 
   useEffect(() => {
@@ -31,7 +32,6 @@ const MainPage = () => {
 
   return (
     <div className="main-page" id="up">
-      {showStickyNav ? <NavBarScroll /> : null}
       <NavBar />
       <BookingImg />
       <div ref={triggerBlockRef} style={{ height: "1px" }} />
@@ -105,7 +105,7 @@ const MainPage = () => {
 
       <h2 className="contacts-h2">Как нас найти</h2>
 
-      <div className="map-contacts" id="contacts-section">
+      {/* <div className="map-contacts" id="contacts-section">
         <MapLocation />
       </div>
 
@@ -132,7 +132,7 @@ const MainPage = () => {
             title="Yandex Map Widget"
           ></iframe>
         </div>
-      </div>
+      </div> */}
 
       <div className="footer">
         <WaveAnimation />

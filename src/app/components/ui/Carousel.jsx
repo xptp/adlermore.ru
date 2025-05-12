@@ -41,63 +41,65 @@ const Carousel = ({ items }) => {
 
   return (
     <div className="carousel">
-      <div
-        className="carousel-container"
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-      >
-        {items.map((item, index) => (
-          <div key={index} className="carousel-item">
-            <div className="back-gr">
-              <div className="carousel-item-description">
-                <h2 className="h2-carousel">{item.title}</h2>
-                <p className="sd-carousel">{item.shortDescription}</p>
-                <p className="size-carousel">
-                  <TbResize /> {item.size} кв.м
-                </p>
-                <button
-                  onClick={() => openModal(item)}
-                  className="more-btn-carousel"
-                >
-                  Подробнее
-                </button>
-                <div className="carousel-btn-containter">
+      <div className="carousel-wrapper">
+        <div
+          className="carousel-container"
+          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        >
+          {items.map((item, index) => (
+            <div key={index} className="carousel-item">
+              <div className="back-gr">
+                <div className="carousel-item-description">
+                  <h2 className="h2-carousel">{item.title}</h2>
+                  <p className="sd-carousel">{item.shortDescription}</p>
+                  <p className="size-carousel">
+                    <TbResize /> {item.size} кв.м
+                  </p>
                   <button
-                    className="carousel-btn-book"
-                    onClick={() =>
-                      document
-                        .getElementById("nav-bar")
-                        .scrollIntoView({ behavior: "smooth" })
-                    }
+                    onClick={() => openModal(item)}
+                    className="more-btn-carousel"
                   >
-                    <div className="arrow-btn">
-                      <HiArrowLongRight />
-                    </div>
-                    Забронировать
+                    Подробнее
                   </button>
+                  <div className="carousel-btn-containter">
+                    <button
+                      className="carousel-btn-book"
+                      onClick={() =>
+                        document
+                          .getElementById("nav-bar")
+                          .scrollIntoView({ behavior: "smooth" })
+                      }
+                    >
+                      <div className="arrow-btn">
+                        <HiArrowLongRight />
+                      </div>
+                      Забронировать
+                    </button>
 
-                  <div className="carousel-btn-group">
-                    <button
-                      className="carousel-btn btn-right"
-                      onClick={goToPrev}
-                    >
-                      <SlArrowLeft />
-                    </button>
-                    <button
-                      className="carousel-btn btn-left"
-                      onClick={goToNext}
-                    >
-                      <SlArrowRight />
-                    </button>
+                    <div className="carousel-btn-group">
+                      <button
+                        className="carousel-btn btn-right"
+                        onClick={goToPrev}
+                      >
+                        <SlArrowLeft />
+                      </button>
+                      <button
+                        className="carousel-btn btn-left"
+                        onClick={goToNext}
+                      >
+                        <SlArrowRight />
+                      </button>
+                    </div>
                   </div>
                 </div>
+                <SwiperComponent
+                  objImages={item.img}
+                  clName={"room-images-swiper"}
+                />
               </div>
-              <SwiperComponent
-                objImages={item.img}
-                clName={"room-images-swiper"}
-              />
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {/* Модальное окно  */}

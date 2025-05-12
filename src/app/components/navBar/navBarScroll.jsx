@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/ui/navBarScroll.scss";
+import "../../styles/navBars/navBarScroll.scss";
 
 const NavBarScroll = () => {
   return (

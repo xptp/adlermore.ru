@@ -56,59 +56,7 @@
   opacity: 1;
   transform: scale(1);
 }
-
-.img-block {
-  max-width: $width-max;
-
-  margin: 0 auto;
-  height: 900px;
-  background-image: url(https://avatars.mds.yandex.net/i?id=c66d383a2842aa3f5ec532a91c5fecbe_l-5230359-images-thumbs&ref=rim&n=13&w=1280&h=720);
-  background-size: cover;
-  background-position: center left;
-  background-repeat: no-repeat;
-  position: relative;
-  transition: all 0.3s ease;
-
-  .img-block-content {
-    margin: 0 auto;
-    max-width: $width-content;
-  }
-
-  .img_text {
-    text-align: left;
-    padding-top: 70px;
-    font-size: 40px;
-    width: 560px;
-    margin-bottom: 200px;
-    color: rgb(245, 245, 245);
-
-    position: relative;
-    font-weight: 700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0, 0, 0, 0.5);
-    padding-left: 20px;
-    z-index: 2;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.3s ease;
-    z-index: 0;
-  }
-
-  &:hover::before {
-    background: rgba(0, 0, 0, 0.1);
-  }
-
-  & > * {
-    position: relative;
-    z-index: 1;
-  }
-}
+// ////////// img block
 
 // блок О нас
 .info {
@@ -436,9 +384,10 @@
     margin: 15px;
   }
 }
-
+// телефон
 @media (max-width: 767px) {
 }
 
+//Планшет
 @media (min-width: 768px) and (max-width: 1024px) {
 }
