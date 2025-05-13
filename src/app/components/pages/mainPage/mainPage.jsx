@@ -35,8 +35,10 @@ const MainPage = () => {
 
   return (
     <div className="main-page" id="up">
+      {!scrinWidth && showStickyNav ? <NavBarScroll /> : null}
       <NavBar />
       <BookingImg />
+
       <div ref={triggerBlockRef} style={{ height: "1px" }} />
       {showStickyNav ? (
         <button
