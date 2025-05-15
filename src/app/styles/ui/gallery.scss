@@ -77,14 +77,30 @@
 }
 
 // Адаптация для мобильных устройств
+@media (max-width: $mobile) {
+  .gallery-container {
+    height: 500px;
+  }
+  .gallery-img-block {
+    gap: 0.5rem;
+    padding: 0 1.5rem;
+
+    img {
+      width: 100%;
+      box-shadow: none;
+
+      // height: 85%;
+    }
+  }
+}
 @media (max-width: 768px) {
   .gallery-container {
     height: 500px;
   }
 
-  .h2-gallery {
-    font-size: 2rem;
-  }
+  // .h2-gallery {
+  //   font-size: 2rem;
+  // }
 
   .gallery-img-block {
     gap: 1.5rem;

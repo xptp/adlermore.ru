@@ -20,6 +20,7 @@ const NavBar = () => {
           <div className="div-logo">
             <img className="logo" src="/img/logo.png" alt='Отель "Море"' />
           </div>
+
           <div className="div-address">
             <h1>Отдых в Адлере в отеле «Море»</h1>
             <p>

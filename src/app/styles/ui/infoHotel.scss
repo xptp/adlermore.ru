@@ -176,3 +176,17 @@
     }
   }
 }
+@media (max-width: $mobile) {
+  .info-container {
+    padding: 5px 10px;
+
+    a {
+      &::after {
+        // bottom: -5px;
+        // left: 0;
+        width: 155px;
+        // height: 2px;
+      }
+    }
+  }
+}

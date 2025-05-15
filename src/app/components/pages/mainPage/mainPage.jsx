@@ -75,14 +75,18 @@ const MainPage = () => {
                   вокзал в 10 минутах. Аэропорт Сочи в 15 минутах.
                 </p>
               </div>
+
               <div className="about-map">
-                <iframe
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a446ffe2e0114f9e8cadbe2c1c8c363a3bad91779196094fbeb387cf0e8e50f&amp;source=constructor"
-                  width="513"
-                  height="600"
-                  frameborder="0"
-                  loading="lazy"
-                ></iframe>
+                {scrinWidth ? null : (
+                  // style="width: 300px; height: 200px"
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a446ffe2e0114f9e8cadbe2c1c8c363a3bad91779196094fbeb387cf0e8e50f&amp;source=constructor"
+                    width="513"
+                    height="100"
+                    frameborder="0"
+                    loading="lazy"
+                  ></iframe>
+                )}
               </div>
             </div>
           </div>
