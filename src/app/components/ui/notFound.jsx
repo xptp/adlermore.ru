@@ -5,10 +5,18 @@ export default function NotFound() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const meta = document.createElement("meta");
+    meta.name = "prerender-status-code";
+    meta.content = "404";
+    document.head.appendChild(meta);
+
     const timer = setTimeout(() => {
       navigate("/");
     }, 5000);
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      document.head.removeChild(meta);
+    };
   }, [navigate]);
 
   return (
