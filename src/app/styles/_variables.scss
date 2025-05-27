@@ -1,12 +1,17 @@
 $width-content: 1300px;
 $width-max: 100vw;
 
-$mobile: 400px;
-$mobile-landscape: 844px;
-
 // $main-color: #2a2e49;
 $main-color: #0693e3;
 $main-text: #263238;
 // $backgound-color: #e0f7fa;
 $backgound-color: #ffffff;
 $a-color: #ff7043;
+
+// Адаптив
+$mobile: 400px;
+$phone-sm: 575.98px;
+$phone-md: 767.98px;
+$tablet: 991.98px;
+$laptop: 1199.98px;
+$desktop: 1200px;

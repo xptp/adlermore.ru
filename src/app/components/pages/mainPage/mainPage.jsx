@@ -15,10 +15,15 @@ import { useWindowWidth } from "../../hooks/useWindowWidth";
 
 const MainPage = () => {
   const [showStickyNav, setShowStickyNav] = useState(false);
+  const [scrinWidth, setScrinWidth] = useState(false);
   const width = useWindowWidth();
-  let scrinWidth = width < 400 ? true : false;
+  // let scrinWidth = false;
 
   const triggerBlockRef = useRef();
+
+  useEffect(() => {
+    setScrinWidth(width < 400 ? true : false);
+  }, [width]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -118,7 +123,7 @@ const MainPage = () => {
         <MapLocation />
       </div>
 
-      {!scrinWidth ? (
+      {/* {!scrinWidth ? (
         <div className="reviews">
           <FishAnimation />
           <div
@@ -143,7 +148,7 @@ const MainPage = () => {
             ></iframe>
           </div>
         </div>
-      ) : null}
+      ) : null} */}
 
       <div className="footer">
         <WaveAnimation />
