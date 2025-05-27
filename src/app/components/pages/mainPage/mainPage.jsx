@@ -123,7 +123,7 @@ const MainPage = () => {
         <MapLocation />
       </div>
 
-      {/* {!scrinWidth ? (
+      {!scrinWidth ? (
         <div className="reviews">
           <FishAnimation />
           <div
@@ -148,7 +148,7 @@ const MainPage = () => {
             ></iframe>
           </div>
         </div>
-      ) : null} */}
+      ) : null}
 
       <div className="footer">
         <WaveAnimation />
