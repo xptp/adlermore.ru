@@ -66,7 +66,7 @@ const Carousel = ({ items }) => {
                       className="carousel-btn-book"
                       onClick={() =>
                         document
-                          .getElementById("nav-bar")
+                          .getElementById("up")
                           .scrollIntoView({ behavior: "smooth" })
                       }
                     >
