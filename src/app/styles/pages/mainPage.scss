@@ -81,7 +81,7 @@
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 20px 0;
+      padding: 20px 10px;
       .about-content {
         display: flex;
         flex-wrap: wrap;
@@ -393,6 +393,9 @@
 
     .info-description {
       padding: 0;
+      .about-container {
+        padding: 0;
+      }
       .about-text {
         h2 {
           font-size: 30px;
@@ -407,13 +410,18 @@
         .info-des-short {
           font-size: 22px;
         }
+        p {
+          font-size: 20px;
+          padding-right: 15px;
+        }
       }
       .about-map {
         // width: 20%;
         // height: 100px;
       }
       .info-des-long {
-        font-size: 22px;
+        font-size: 20px;
+        padding-right: 15px;
       }
     }
   }

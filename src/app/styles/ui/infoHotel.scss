@@ -178,13 +178,27 @@
 }
 @media (max-width: $mobile) {
   .info-container {
-    padding: 5px 10px;
+    padding: 5px 15px;
+    .info-desc-container {
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    .info-btn-container {
+      padding-right: 10px;
+
+      .modal-btn {
+        font-size: 15px;
+      }
+    }
 
     a {
+      font-size: 17px;
       &::after {
         // bottom: -5px;
         // left: 0;
-        width: 155px;
+        width: 146px;
         // height: 2px;
       }
     }

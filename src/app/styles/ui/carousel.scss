@@ -71,6 +71,9 @@
     margin-bottom: 50px;
     color: lighten($main-text, 15%);
     line-height: 1.4;
+    min-height: 200px;
+    height: 200px;
+    overflow: hidden;
   }
 
   .size-carousel {
