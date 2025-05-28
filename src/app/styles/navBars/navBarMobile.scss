@@ -20,7 +20,7 @@
 }
 
 .nav-bar-mobile {
-  padding: 20px 0;
+  // padding: 20px 0;
 }
 
 .header_nav-list-mobile {
@@ -100,4 +100,8 @@
 .closeNav {
   background: none;
   border: none;
+  width: 100%;
+  text-align: right;
+  padding: 5px 5px 0 0;
+  font-size: 15px;
 }

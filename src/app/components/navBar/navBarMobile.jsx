@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/navBars/navBarMobile.scss";
+import { MdClose } from "react-icons/md";
 
 const NavBarMobile = ({ isOpen, closeNav }) => {
   console.log(isOpen);
@@ -7,7 +8,7 @@ const NavBarMobile = ({ isOpen, closeNav }) => {
   return (
     <div className={`header-nav-mobile ${isOpen ? "open" : null}`}>
       <button className="closeNav" onClick={() => closeNav()}>
-        X
+        <MdClose />
       </button>
       <nav className="nav-bar-mobile">
         <ul className="header_nav-list-mobile">
