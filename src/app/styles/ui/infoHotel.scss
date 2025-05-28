@@ -190,6 +190,11 @@
 
       .modal-btn {
         font-size: 15px;
+        padding: 6px 5px;
+
+        &:first-child {
+          margin-top: 50px;
+        }
       }
     }
 
