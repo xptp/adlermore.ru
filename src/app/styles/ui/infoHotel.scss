@@ -209,3 +209,36 @@
     }
   }
 }
+@media (max-width: $phone-sm) {
+  .info-container {
+    padding: 5px 15px;
+    .info-desc-container {
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    .info-btn-container {
+      padding-right: 10px;
+
+      .modal-btn {
+        font-size: 15px;
+        padding: 8px 7px;
+
+        &:first-child {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    a {
+      font-size: 17px;
+      &::after {
+        // bottom: -5px;
+        // left: 0;
+        width: 146px;
+        // height: 2px;
+      }
+    }
+  }
+}

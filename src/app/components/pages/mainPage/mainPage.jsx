@@ -22,7 +22,7 @@ const MainPage = () => {
   const triggerBlockRef = useRef();
 
   useEffect(() => {
-    setScrinWidth(width < 400 ? true : false);
+    setScrinWidth(width < 500 ? true : false);
   }, [width]);
 
   useEffect(() => {

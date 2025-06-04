@@ -50,7 +50,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {width < 401 ? (
+      {width < 501 ? (
         !isNavOpen ? (
           <IoIosMenu
             className="navIco"

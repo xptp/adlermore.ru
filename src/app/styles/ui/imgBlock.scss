@@ -64,3 +64,15 @@
     }
   }
 }
+@media (max-width: $phone-sm) {
+  .img-block {
+    height: 420px;
+
+    .img_text {
+      padding-top: 30px;
+      max-width: 80%;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
