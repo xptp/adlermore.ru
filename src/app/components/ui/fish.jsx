@@ -57,7 +57,8 @@ const FishAnimation = () => {
 
       {/* Рыбка */}
       <motion.img
-        src="./img/clown-fish.png"
+        // src="./img/clown-fish.png"
+        src="./img/clown-fish.webp"
         alt="Рыбка"
         style={{
           position: "absolute",
