@@ -1,19 +1,33 @@
 @import "../variables.scss";
 .img-block {
   max-width: $width-max;
+  overflow: hidden;
 
   margin: 0 auto;
   height: 900px;
-  background-image: url(https://avatars.mds.yandex.net/i?id=c66d383a2842aa3f5ec532a91c5fecbe_l-5230359-images-thumbs&ref=rim&n=13&w=1280&h=720);
+  // background-image: url(https://avatars.mds.yandex.net/i?id=c66d383a2842aa3f5ec532a91c5fecbe_l-5230359-images-thumbs&ref=rim&n=13&w=1280&h=720);
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
   position: relative;
   transition: all 0.3s ease;
+  overflow: hidden;
 
   .img-block-content {
     margin: 0 auto;
     max-width: $width-content;
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
   }
 
   .img_text {
@@ -37,14 +51,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
     transition: background 0.3s ease;
     z-index: 0;
   }
 
-  &:hover::before {
-    background: rgba(0, 0, 0, 0.1);
-  }
+  // &:hover::before {
+  //   background: rgba(0, 0, 0, 0.1);
+  // }
 
   & > * {
     position: relative;
