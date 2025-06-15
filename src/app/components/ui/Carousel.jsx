@@ -6,7 +6,7 @@ import SwiperComponent from "./swiperComponent";
 import { IoMdClose } from "react-icons/io";
 import { TbResize } from "react-icons/tb";
 
-const Carousel = ({ items }) => {
+const Carousel = ({ items, vidth }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentModalItem, setCurrentModalItem] = useState(null);
@@ -66,7 +66,7 @@ const Carousel = ({ items }) => {
                       className="carousel-btn-book"
                       onClick={() =>
                         document
-                          .getElementById("up")
+                          .getElementById(vidth ? "up-mobile" : "up")
                           .scrollIntoView({ behavior: "smooth" })
                       }
                     >
@@ -130,7 +130,7 @@ const Carousel = ({ items }) => {
                     onClick={() => {
                       closeModal();
                       document
-                        .getElementById("up-mobile")
+                        .getElementById(vidth ? "up-mobile" : "up")
                         .scrollIntoView({ behavior: "smooth" });
                     }}
                   >

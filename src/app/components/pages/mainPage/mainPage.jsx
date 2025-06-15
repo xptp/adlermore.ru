@@ -111,7 +111,7 @@ const MainPage = () => {
         </div>
       </div>
       <div id="rooms-section">
-        <Carousel items={rooms} />
+        <Carousel items={rooms} vidth={scrinWidth} />
       </div>
 
       <Gallery />
