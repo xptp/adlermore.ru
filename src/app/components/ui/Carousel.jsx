@@ -124,6 +124,19 @@ const Carousel = ({ items }) => {
                   <p>{currentModalItem.description}</p>
                   <p className="room-size">{currentModalItem.size} кв.м</p>
                 </div>
+                <button
+                  className="carousel-btn-book"
+                  onClick={() =>
+                    document
+                      .getElementById("up")
+                      .scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  <div className="arrow-btn">
+                    <HiArrowLongRight />
+                  </div>
+                  Забронировать
+                </button>
               </div>
             </div>
 
