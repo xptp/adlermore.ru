@@ -145,14 +145,14 @@
 // ///////////////////////////
 .navIco {
   position: fixed;
-  top: 150px;
-  left: 1px;
+  top: 75px;
+  left: 5px;
   z-index: 1100; // выше, чем .header-nav-mobile
   font-size: 32px;
   color: #333;
   background: white;
   border-radius: 50%;
-  padding: 8px;
+  padding: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color 0.2s;

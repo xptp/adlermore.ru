@@ -12,6 +12,7 @@ import Gallery from "../../ui/gallery";
 import WaveAnimation from "./waveAnimation";
 import FishAnimation from "../../ui/fish";
 import { useWindowWidth } from "../../hooks/useWindowWidth";
+import HotelWidget from "../../ui/hotelBookingWidget";
 
 const MainPage = () => {
   const [showStickyNav, setShowStickyNav] = useState(false);
@@ -42,7 +43,7 @@ const MainPage = () => {
     <div className="main-page" id="up">
       {!scrinWidth && showStickyNav ? <NavBarScroll /> : null}
       <NavBar />
-      <BookingImg />
+      <BookingImg vidth={scrinWidth} />
 
       <div ref={triggerBlockRef} style={{ height: "1px" }} />
       {showStickyNav ? (
@@ -55,6 +56,7 @@ const MainPage = () => {
           <MdOutlineArrowCircleUp />
         </button>
       ) : null}
+      {!scrinWidth ? <HotelWidget /> : null}
 
       <div className="info">
         {/* <img

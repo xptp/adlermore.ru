@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import HotelWidget from "./hotelBookingWidget";
 import "../../styles/ui/imgBlock.scss";
-// import video from "./video/mainVideo.mp4";
-// import { useWindowWidth } from "../hooks/useWindowWidth";
-const BookingImg = () => {
-  // const width = useWindowWidth();
+import { IoMdClose } from "react-icons/io";
+
+const BookingImg = ({ vidth }) => {
+  const [isModal, setIsModal] = useState(false);
+
   return (
     <div className="img-block">
       <video autoPlay muted loop playsInline className="bg-video">
@@ -12,11 +13,33 @@ const BookingImg = () => {
         Your browser does not support the video tag.
       </video>
       <div className="img-block-content">
-        <div className="img_text">Рады гостям круглый год!</div>
-        <div className="wiget-img">
-          <HotelWidget />
+        {vidth ? <div className="img_text"> Отель "Море" в Адлере</div> : null}
+        <div className="img_text">
+          {vidth
+            ? "Здесь рады гостям круглый год!"
+            : "Рады гостям круглый год!"}
         </div>
+        <div className="wiget-img">{vidth ? <HotelWidget /> : null}</div>
       </div>
+      <button className="btn-prev" onClick={() => setIsModal(true)}>
+        Видео презентация
+      </button>
+      {isModal ? (
+        <div className="modal-video-overlay">
+          {" "}
+          <div className="modal-video-content">
+            <button
+              className="modal-video-close-btn"
+              onClick={() => setIsModal(false)}
+            >
+              <IoMdClose />
+            </button>
+            <video controls className="modal-video">
+              <source src="/video/mainVideo.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 };
