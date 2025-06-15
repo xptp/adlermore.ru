@@ -56,7 +56,11 @@ const MainPage = () => {
           <MdOutlineArrowCircleUp />
         </button>
       ) : null}
-      {scrinWidth ? <HotelWidget /> : null}
+      {scrinWidth ? (
+        <div id="up-mobile">
+          <HotelWidget />
+        </div>
+      ) : null}
 
       <div className="info">
         {/* <img

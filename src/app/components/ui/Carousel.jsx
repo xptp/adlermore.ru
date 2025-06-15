@@ -130,7 +130,7 @@ const Carousel = ({ items }) => {
                     onClick={() => {
                       closeModal();
                       document
-                        .getElementById("up")
+                        .getElementById("up-mobile")
                         .scrollIntoView({ behavior: "smooth" });
                     }}
                   >
