@@ -124,19 +124,19 @@ const Carousel = ({ items }) => {
                   <p>{currentModalItem.description}</p>
                   <p className="room-size">{currentModalItem.size} кв.м</p>
                 </div>
-                <button
-                  className="carousel-btn-book"
-                  onClick={() =>
-                    document
-                      .getElementById("up")
-                      .scrollIntoView({ behavior: "smooth" })
-                  }
-                >
-                  <div className="arrow-btn">
-                    <HiArrowLongRight />
-                  </div>
-                  Забронировать
-                </button>
+                <div>
+                  <button
+                    className="carousel-btn-more-book"
+                    onClick={() => {
+                      closeModal();
+                      document
+                        .getElementById("up")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
+                  >
+                    Забронировать
+                  </button>
+                </div>
               </div>
             </div>
 
