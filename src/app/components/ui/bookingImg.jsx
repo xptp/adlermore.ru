@@ -19,7 +19,7 @@ const BookingImg = ({ vidth }) => {
             ? "Здесь рады гостям круглый год!"
             : "Рады гостям круглый год!"}
         </div>
-        <div className="wiget-img">{vidth ? <HotelWidget /> : null}</div>
+        <div className="wiget-img">{vidth > 501 ? <HotelWidget /> : null}</div>
       </div>
       <button className="btn-prev" onClick={() => setIsModal(true)}>
         Видео презентация
