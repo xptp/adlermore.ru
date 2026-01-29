@@ -49,11 +49,13 @@ const HotelWidget = ({
   const scriptLoadedRef = useRef(false);
 
   useEffect(() => {
+    // Если скрипт уже загружен, не загружаем снова
     if (scriptLoadedRef.current) {
       initWidget();
       return;
     }
 
+    // Загружаем скрипт
     const script = document.createElement('script');
     script.src = 'https://widget.reservationsteps.ru/js/bnovo.js';
     script.async = true;
@@ -69,10 +71,13 @@ const HotelWidget = ({
 
     document.head.appendChild(script);
 
+    // Инициализация виджета
     const initWidget = () => {
+      // Добавляем небольшую задержку, чтобы убедиться, что скрипт полностью загружен
       setTimeout(() => {
         if (window.Bnovo_Widget && widgetRef.current) {
           try {
+            // Используем IIFE как в оригинальном коде
             (function() {
               window.Bnovo_Widget.init(function() {
                 window.Bnovo_Widget.open('_bn_widget_', {
@@ -131,6 +136,8 @@ const HotelWidget = ({
 
     // Очистка
     return () => {
+      // Здесь можно попытаться удалить виджет, если API предоставляет такую возможность
+      // Обычно внешние виджеты не требуют очистки
     };
   }, [
     uid, lang, currency, type, width, widthMobile, background, backgroundMobile,
@@ -141,6 +148,25 @@ const HotelWidget = ({
     minAge, maxAge, adultsDefault, datesPreset, dfromToday, dfromValue, dtoNextday,
     dtoValue, cancelColor, url, switchMobiles, switchMobilesWidth
   ]);
+
+  // Обработчик для предотвращения стандартной отправки формы
+  useEffect(() => {
+    const handleSubmit = (e) => {
+      // Предотвращаем стандартную отправку формы, если это форма внутри виджета
+      if (e.target.closest && e.target.closest('#_bn_widget_')) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    };
+
+    // Добавляем обработчик на все формы в документе
+    document.addEventListener('submit', handleSubmit, true); // Используем capture phase
+    
+    return () => {
+      document.removeEventListener('submit', handleSubmit, true);
+    };
+  }, []);
 
   return (
     <div className="left" id="_bn_widget_" ref={widgetRef}>
