@@ -36,7 +36,7 @@ const HotelWidget = ({
   maxAge = "17",
   adultsDefault = "1",
   cancelColor = "#1875F0",
-  url = "https://adlermore.ru",
+  // url = "https://adlermore.ru",
   switchMobilesWidth = "800",
 } = {}) => {
   const widgetRef = useRef(null);
@@ -89,7 +89,7 @@ const HotelWidget = ({
               max_age: maxAge,
               adults_default: adultsDefault,
               cancel_color: cancelColor,
-              url: url,
+              // url: url,
               switch_mobiles_width: switchMobilesWidth,
             });
           });
@@ -140,7 +140,7 @@ const HotelWidget = ({
     buttonFontSize, buttonHeight, fontType, titleColor, titleColorMobile, titleSize,
     titleSizeMobile, inpColor, inpBordhover, inpBordcolor, inpAlpha, btnBackground,
     btnBackgroundOver, btnTextcolor, btnTextover, btnBordcolor, btnBordhover,
-    minAge, maxAge, adultsDefault, cancelColor, url, switchMobilesWidth
+    minAge, maxAge, adultsDefault, cancelColor, switchMobilesWidth
   ]);
 
   return (
