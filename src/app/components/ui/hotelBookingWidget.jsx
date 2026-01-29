@@ -5,7 +5,7 @@ const HotelWidget = ({
   lang = "ru",
   currency = "RUB",
   type = "horizontal",
-  width = "80%",
+  width = "100%",
   widthMobile = "300",
   background = "#ffffff",
   backgroundMobile = "#ffffff",
@@ -23,9 +23,9 @@ const HotelWidget = ({
   titleSize = "22",
   titleSizeMobile = "22",
   inpColor = "#242742",
-  inpBordhover = "#BBBBBB",
-  inpBordcolor = "#DDDDDD",
-  inpAlpha = "10",
+  inpBordhover = "#dedfe3",
+  inpBordcolor = "#BCBCBC",
+  inpAlpha = "100",
   btnBackground = "#1875F0",
   btnBackgroundOver = "#1850D2",
   btnTextcolor = "#FFFFFF",
@@ -35,138 +35,113 @@ const HotelWidget = ({
   minAge = "0",
   maxAge = "17",
   adultsDefault = "1",
-  datesPreset = "on",
-  dfromToday = "on",
-  dfromValue = "2",
-  dtoNextday = "on",
-  dtoValue = "2",
   cancelColor = "#1875F0",
   url = "https://adlermore.ru",
-  switchMobiles = "on",
   switchMobilesWidth = "800",
 } = {}) => {
   const widgetRef = useRef(null);
-  const scriptLoadedRef = useRef(false);
+  const initializedRef = useRef(false);
 
   useEffect(() => {
-    // Если скрипт уже загружен, не загружаем снова
-    if (scriptLoadedRef.current) {
-      initWidget();
+    // Проверяем, не инициализирован ли уже виджет
+    if (initializedRef.current) {
       return;
     }
 
-    // Загружаем скрипт
-    const script = document.createElement('script');
-    script.src = 'https://widget.reservationsteps.ru/js/bnovo.js';
-    script.async = true;
-    
-    script.onload = () => {
-      scriptLoadedRef.current = true;
-      initWidget();
-    };
-    
-    script.onerror = (error) => {
-      console.error('Не удалось загрузить скрипт Bnovo:', error);
-    };
-
-    document.head.appendChild(script);
-
-    // Инициализация виджета
+    // Функция инициализации виджета
     const initWidget = () => {
-      // Добавляем небольшую задержку, чтобы убедиться, что скрипт полностью загружен
-      setTimeout(() => {
-        if (window.Bnovo_Widget && widgetRef.current) {
-          try {
-            // Используем IIFE как в оригинальном коде
-            (function() {
-              window.Bnovo_Widget.init(function() {
-                window.Bnovo_Widget.open('_bn_widget_', {
-                  type: type,
-                  uid: uid,
-                  lang: lang,
-                  currency: currency,
-                  width: width,
-                  width_mobile: widthMobile,
-                  background: background,
-                  background_mobile: backgroundMobile,
-                  bg_alpha: bgAlpha,
-                  bg_alpha_mobile: bgAlphaMobile,
-                  border_color_mobile: borderColorMobile,
-                  padding: padding,
-                  padding_mobile: paddingMobile,
-                  border_radius: borderRadius,
-                  button_font_size: buttonFontSize,
-                  button_height: buttonHeight,
-                  font_type: fontType,
-                  title_color: titleColor,
-                  title_color_mobile: titleColorMobile,
-                  title_size: titleSize,
-                  title_size_mobile: titleSizeMobile,
-                  inp_color: inpColor,
-                  inp_bordhover: inpBordhover,
-                  inp_bordcolor: inpBordcolor,
-                  inp_alpha: inpAlpha,
-                  btn_background: btnBackground,
-                  btn_background_over: btnBackgroundOver,
-                  btn_textcolor: btnTextcolor,
-                  btn_textover: btnTextover,
-                  btn_bordcolor: btnBordcolor,
-                  btn_bordhover: btnBordhover,
-                  min_age: minAge,
-                  max_age: maxAge,
-                  adults_default: adultsDefault,
-                  dates_preset: datesPreset,
-                  dfrom_today: dfromToday,
-                  dfrom_value: dfromValue,
-                  dto_nextday: dtoNextday,
-                  dto_value: dtoValue,
-                  cancel_color: cancelColor,
-                  url: url,
-                  switch_mobiles: switchMobiles,
-                  switch_mobiles_width: switchMobilesWidth,
-                });
-              });
-            })();
-          } catch (error) {
-            console.error('Ошибка при инициализации виджета Bnovo:', error);
-          }
+      if (window.Bnovo_Widget && widgetRef.current) {
+        try {
+          window.Bnovo_Widget.init(function() {
+            window.Bnovo_Widget.open('_bn_widget_', {
+              type: type,
+              uid: uid,
+              lang: lang,
+              currency: currency,
+              width: width,
+              width_mobile: widthMobile,
+              background: background,
+              background_mobile: backgroundMobile,
+              bg_alpha: bgAlpha,
+              bg_alpha_mobile: bgAlphaMobile,
+              border_color_mobile: borderColorMobile,
+              padding: padding,
+              padding_mobile: paddingMobile,
+              border_radius: borderRadius,
+              button_font_size: buttonFontSize,
+              button_height: buttonHeight,
+              font_type: fontType,
+              title_color: titleColor,
+              title_color_mobile: titleColorMobile,
+              title_size: titleSize,
+              title_size_mobile: titleSizeMobile,
+              inp_color: inpColor,
+              inp_bordhover: inpBordhover,
+              inp_bordcolor: inpBordcolor,
+              inp_alpha: inpAlpha,
+              btn_background: btnBackground,
+              btn_background_over: btnBackgroundOver,
+              btn_textcolor: btnTextcolor,
+              btn_textover: btnTextover,
+              btn_bordcolor: btnBordcolor,
+              btn_bordhover: btnBordhover,
+              min_age: minAge,
+              max_age: maxAge,
+              adults_default: adultsDefault,
+              cancel_color: cancelColor,
+              url: url,
+              switch_mobiles_width: switchMobilesWidth,
+            });
+          });
+          initializedRef.current = true;
+        } catch (error) {
+          console.error('Ошибка при инициализации виджета Bnovo:', error);
         }
-      }, 500);
+      }
     };
 
-    // Очистка
-    return () => {
-      // Здесь можно попытаться удалить виджет, если API предоставляет такую возможность
-      // Обычно внешние виджеты не требуют очистки
-    };
+    // Проверяем, загружен ли уже скрипт
+    const existingScript = document.querySelector('script[src*="bnovo.js"]');
+    
+    if (existingScript && window.Bnovo_Widget) {
+      // Скрипт уже загружен, инициализируем виджет
+      initWidget();
+    } else if (!existingScript) {
+      // Загружаем скрипт
+      const script = document.createElement('script');
+      script.src = 'https://widget.reservationsteps.ru/js/bnovo.js';
+      script.async = true;
+      
+      script.onload = () => {
+        // Даем время на инициализацию глобального объекта
+        setTimeout(initWidget, 100);
+      };
+      
+      script.onerror = (error) => {
+        console.error('Не удалось загрузить скрипт Bnovo:', error);
+      };
+
+      document.head.appendChild(script);
+    } else {
+      // Скрипт добавлен, но еще не загружен - ждем
+      const checkInterval = setInterval(() => {
+        if (window.Bnovo_Widget) {
+          clearInterval(checkInterval);
+          initWidget();
+        }
+      }, 100);
+      
+      // Очистка интервала через 10 секунд если так и не загрузился
+      setTimeout(() => clearInterval(checkInterval), 10000);
+    }
   }, [
     uid, lang, currency, type, width, widthMobile, background, backgroundMobile,
     bgAlpha, bgAlphaMobile, borderColorMobile, padding, paddingMobile, borderRadius,
     buttonFontSize, buttonHeight, fontType, titleColor, titleColorMobile, titleSize,
     titleSizeMobile, inpColor, inpBordhover, inpBordcolor, inpAlpha, btnBackground,
     btnBackgroundOver, btnTextcolor, btnTextover, btnBordcolor, btnBordhover,
-    minAge, maxAge, adultsDefault, datesPreset, dfromToday, dfromValue, dtoNextday,
-    dtoValue, cancelColor, url, switchMobiles, switchMobilesWidth
+    minAge, maxAge, adultsDefault, cancelColor, url, switchMobilesWidth
   ]);
-
-  // Обработчик для предотвращения стандартной отправки формы
-  useEffect(() => {
-    const handleSubmit = (e) => {
-      // Предотвращаем стандартную отправку формы, если это форма внутри виджета
-      if (e.target.closest && e.target.closest('#_bn_widget_')) {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-      }
-    };
-
-    // Добавляем обработчик на все формы в документе
-    document.addEventListener('submit', handleSubmit, true); // Используем capture phase
-    
-    return () => {
-      document.removeEventListener('submit', handleSubmit, true);
-    };
-  }, []);
 
   return (
     <div className="left" id="_bn_widget_" ref={widgetRef}>
