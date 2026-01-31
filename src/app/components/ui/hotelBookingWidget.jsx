@@ -23,11 +23,11 @@ const HotelWidget = ({
   titleSize = "22",
   titleSizeMobile = "22",
   inpColor = "#242742",
-  inpBordhover = "#dedfe3",
+  inpBordhover = "#757575",
   inpBordcolor = "#BCBCBC",
   inpAlpha = "100",
-  btnBackground = "#1875F0",
-  btnBackgroundOver = "#1850D2",
+  btnBackground = "#0693e3",
+  btnBackgroundOver = "#077dbd",
   btnTextcolor = "#FFFFFF",
   btnTextover = "#FFFFFF",
   btnBordcolor = "#1875F0",
@@ -35,7 +35,13 @@ const HotelWidget = ({
   minAge = "0",
   maxAge = "17",
   adultsDefault = "1",
-  cancelColor = "#1875F0",
+  datesPreset = "on",
+  dfromToday = "on",
+  dfromValue = "2",
+  dtoNextday = "on",
+  dtoValue = "2",
+  cancelPreset = "on",
+  cancelColor = "#0693e3",
   // url = "https://adlermore.ru",
   switchMobilesWidth = "800",
 } = {}) => {
@@ -88,6 +94,12 @@ const HotelWidget = ({
               min_age: minAge,
               max_age: maxAge,
               adults_default: adultsDefault,
+              dates_preset: datesPreset,
+              dfrom_today: dfromToday,
+              dfrom_value: dfromValue,
+              dto_nextday: dtoNextday,
+              dto_value: dtoValue,
+              cancel_preset: cancelPreset,
               cancel_color: cancelColor,
               // url: url,
               switch_mobiles_width: switchMobilesWidth,
@@ -140,7 +152,8 @@ const HotelWidget = ({
     buttonFontSize, buttonHeight, fontType, titleColor, titleColorMobile, titleSize,
     titleSizeMobile, inpColor, inpBordhover, inpBordcolor, inpAlpha, btnBackground,
     btnBackgroundOver, btnTextcolor, btnTextover, btnBordcolor, btnBordhover,
-    minAge, maxAge, adultsDefault, cancelColor, switchMobilesWidth
+    minAge, maxAge, adultsDefault, datesPreset, dfromToday, dfromValue, dtoNextday,
+    dtoValue, cancelPreset, cancelColor, switchMobilesWidth
   ]);
 
   return (
